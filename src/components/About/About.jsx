@@ -1,12 +1,10 @@
 import React from 'react'
 import Modal from 'react-modal'
+import { motion } from 'framer-motion'
 
 import '../../styles/About.css'
 
-import headshot from '../../assets/images/headshot2017.png'
-import linkedin from '../../assets/icons/linkedin-brands.svg'
-import github from '../../assets/icons/github-square-brands.svg'
-import email from '../../assets/icons/envelope-square-solid.svg'
+import headshot from '../../assets/images/matt-beach.jpg'
 
 
 const customStyles = {
@@ -42,14 +40,24 @@ const About = (props) => {
   }
 
   return (
-    <div>
-      <img id='headshot' src={headshot} alt="headshot" />
+    <div className='about'>
+      <div 
+        className='headshot-container' 
+        style={{backgroundImage: `url(${headshot})`}}
+        ></div>
+      {/* <img id='headshot' src={headshot} alt="headshot" /> */}
       <h1>Matt Gefen
         <br></br>
         Software Engineer
       </h1>
-      <p><i>I am a Boulder based software engineer who loves hiking, reading, video games, and D&D! I'm passionate about full-stack software development and love building tools that address tangible organizational needs. </i></p>
-      <button onClick={openModal}>Read More</button>
+      <p className='summary'><i>I am a Boulder based software engineer who loves hiking, reading, video games, and D&D! I'm passionate about Full Stack software development and love building tools that address tangible organizational needs. </i></p>
+      <motion.button
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.9 }}
+        onClick={openModal}
+      >
+        Read More
+      </motion.button>
       <Modal
         isOpen={modalIsOpen}
         onAfterOpen={afterOpenModal}
@@ -89,22 +97,37 @@ const About = (props) => {
           </div>
         </div>
       </Modal>
+      <div className='bio'>
+          <div className='left-bio'>
+            <h5>Age</h5>
+            <h5>City</h5>
+            <h5>Email</h5>
+            <h5>Current Employment</h5>
+          </div>
+          <div className='right-bio'>
+            <h5>26</h5>
+            <h5>Boulder, Colorado</h5>
+            <h5>        
+              <a className='link' href='mailto: matt.gefen@gmail.com'>
+                matt.gefen@gmail.com
+              </a>
+            </h5>
+            <h5>Actively Seeking Opportunities</h5>
+          </div>
+        </div>
+        <a 
+        className='link' 
+        href='https://drive.google.com/file/d/1bgmu_M3bELyKMF5upDRMToTq44Qn9GJI/view?usp=sharing'
+        target="_blank"
+        rel="noopener noreferrer">
+          <motion.button
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+          >
+          View Resume
+        </motion.button>
+      </a>
 
-      <h4>Programming</h4>
- 
-      <h4>Frameworks</h4>
-      <p></p>
-      <div id='icons'>
-        <a href='https://www.linkedin.com/in/mattgefen/'>
-          <img class='icon' src={linkedin} alt='linkedin-logo' />
-        </a>
-        <a href='https://github.com/matt-gefen'>
-          <img class='icon' src={github} alt='github-logo'/>
-        </a>
-        <a class='link' href='mailto: matt.gefen@gmail.com'>
-          <img class='icon' src={email} alt='email-logo'/>
-        </a>
-      </div>
     </div>
   )
 }
