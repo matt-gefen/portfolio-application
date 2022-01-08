@@ -1,14 +1,4 @@
-#icons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-}
-
-.icon {
-  width: 40px;
-}
-.headshot-container {
+.headshotContainer {
   height: 300px;
   margin-left: 20px;
   margin-right: 20px;
@@ -38,11 +28,11 @@ h1 {
   gap: 20px;
 }
 
-.right-bio {
+.rightBio {
   text-align: left;
 }
 
-.left-bio {
+.leftBio {
   text-align: right;
   width: 20%;
   margin-left: 20px;

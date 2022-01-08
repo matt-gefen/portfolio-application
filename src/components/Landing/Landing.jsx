@@ -12,7 +12,7 @@ const Landing = (props) => {
   return (
     <div className={styles.landing}>
       <div 
-        className='headshot-container' 
+        className={styles.headshotContainer}
         style={{backgroundImage: `url(${headshot})`}}>
       </div>
       <h1>Matt Gefen</h1>
@@ -23,7 +23,7 @@ const Landing = (props) => {
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
             style={{backgroundColor: "transparent", border: "none"}}>
-              <img class='icon' src={linkedin} alt='linkedin-logo' />
+              <img className={styles.icon} src={linkedin} alt='linkedin-logo' />
           </motion.button>
         </a>
         <a href='https://github.com/matt-gefen'>
@@ -32,7 +32,7 @@ const Landing = (props) => {
             whileTap={{ scale: 0.9 }}
             style={{backgroundColor: "transparent", border: "none"}}
           >
-            <img class='icon' src={github} alt='github-logo'/>
+            <img className={styles.icon} src={github} alt='github-logo'/>
           </motion.button>
         </a>
         <a class='link' href='mailto: matt.gefen@gmail.com'>
@@ -40,7 +40,7 @@ const Landing = (props) => {
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
           style={{backgroundColor: "transparent", border: "none"}}>
-            <img class='icon' src={email} alt='email-logo'/>
+            <img className={styles.icon} src={email} alt='email-logo'/>
         </motion.button>
         </a>
       </div>

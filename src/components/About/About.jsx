@@ -2,7 +2,7 @@ import React from 'react'
 import Modal from 'react-modal'
 import { motion } from 'framer-motion'
 
-import '../../styles/About.css'
+import styles from "./About.module.css";
 
 import headshot from '../../assets/images/matt-beach.jpg'
 
@@ -42,15 +42,14 @@ const About = (props) => {
   return (
     <div className='about'>
       <div 
-        className='headshot-container' 
+        className={styles.headshotContainer}
         style={{backgroundImage: `url(${headshot})`}}
         ></div>
-      {/* <img id='headshot' src={headshot} alt="headshot" /> */}
       <h1>Matt Gefen
         <br></br>
         Software Engineer
       </h1>
-      <p className='summary'><i>I am a Boulder based software engineer who loves hiking, reading, video games, and D&D! I'm passionate about Full Stack software development and love building tools that address tangible organizational needs. </i></p>
+      <p className={styles.summary}><i>I am a Boulder based software engineer who loves hiking, reading, video games, and D&D! I'm passionate about Full Stack software development and love building tools that address tangible organizational needs. </i></p>
       <motion.button
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
@@ -67,14 +66,14 @@ const About = (props) => {
       >
         <button onClick={closeModal}>close</button>
         <h4>Programming Skills</h4>
-        <div className='skills'>
-          <div className='subskills'>
+        <div className={styles.skills}>
+          <div className={styles.subskills}>
             <h5>Javascript</h5>
             <h5>Python</h5>
             <h5>React</h5>
             <h5>Node.js</h5>
           </div>
-          <div className='subskills'>
+          <div className={styles.subskills}>
             <h5>Express.js</h5>
             <h5>Django.js</h5>
             <h5>SQL</h5>
@@ -82,14 +81,14 @@ const About = (props) => {
           </div>
         </div>
         <h4>Technical Tools</h4>
-        <div className='skills'>
-          <div className='subskills'>
+        <div className={styles.skills}>
+          <div className={styles.subskills}>
             <h5>Snowflake</h5>
             <h5>dbt/dbt Cloud</h5>
             <h5>MongoDB</h5>
             <h5>PostgreSQL</h5>
           </div>
-          <div className='subskills'>
+          <div className={styles.subskills}>
             <h5>Tableau</h5>
             <h5>AWS</h5>
             <h5>Fivetran</h5>
@@ -97,18 +96,18 @@ const About = (props) => {
           </div>
         </div>
       </Modal>
-      <div className='bio'>
-          <div className='left-bio'>
+      <div className={styles.bio}>
+          <div className={styles.leftBio}>
             <h5>Age</h5>
             <h5>City</h5>
             <h5>Email</h5>
             <h5>Current Employment</h5>
           </div>
-          <div className='right-bio'>
+          <div className={styles.rightBio}>
             <h5>26</h5>
             <h5>Boulder, Colorado</h5>
             <h5>        
-              <a className='link' href='mailto: matt.gefen@gmail.com'>
+              <a className={styles.link} href='mailto: matt.gefen@gmail.com'>
                 matt.gefen@gmail.com
               </a>
             </h5>
@@ -116,7 +115,7 @@ const About = (props) => {
           </div>
         </div>
         <a 
-        className='link' 
+        className={styles.link} 
         href='https://drive.google.com/file/d/1bgmu_M3bELyKMF5upDRMToTq44Qn9GJI/view?usp=sharing'
         target="_blank"
         rel="noopener noreferrer">
