@@ -96,24 +96,6 @@ const About = (props) => {
           </div>
         </div>
       </Modal>
-      <div className={styles.bio}>
-          <div className={styles.leftBio}>
-            <h5>Age</h5>
-            <h5>City</h5>
-            <h5>Email</h5>
-            <h5>Current Employment</h5>
-          </div>
-          <div className={styles.rightBio}>
-            <h5>26</h5>
-            <h5>Boulder, Colorado</h5>
-            <h5>        
-              <a className={styles.link} href='mailto: matt.gefen@gmail.com'>
-                matt.gefen@gmail.com
-              </a>
-            </h5>
-            <h5>Actively Seeking Opportunities</h5>
-          </div>
-        </div>
         <a 
         className={styles.link} 
         href='https://drive.google.com/file/d/1bgmu_M3bELyKMF5upDRMToTq44Qn9GJI/view?usp=sharing'

@@ -18,7 +18,9 @@ const Landing = (props) => {
       <h1>Matt Gefen</h1>
       <p><i>Full-Stack Software Developer based in Boulder, Colorado! I bring a passion for learning and problem solving to every project I collaborate on.</i></p>
       <div id='icons'>
-        <a href='https://www.linkedin.com/in/mattgefen/'>
+        <a href='https://www.linkedin.com/in/mattgefen/'
+          target="_blank"
+          rel="noopener noreferrer">
           <motion.button
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
@@ -26,7 +28,9 @@ const Landing = (props) => {
               <img className={styles.icon} src={linkedin} alt='linkedin-logo' />
           </motion.button>
         </a>
-        <a href='https://github.com/matt-gefen'>
+        <a href='https://github.com/matt-gefen'
+          target="_blank"
+          rel="noopener noreferrer">
           <motion.button
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
@@ -35,7 +39,9 @@ const Landing = (props) => {
             <img className={styles.icon} src={github} alt='github-logo'/>
           </motion.button>
         </a>
-        <a class='link' href='mailto: matt.gefen@gmail.com'>
+        <a class='link' href='mailto: matt.gefen@gmail.com'
+          target="_blank"
+          rel="noopener noreferrer">
         <motion.button
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
