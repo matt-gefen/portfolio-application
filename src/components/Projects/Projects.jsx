@@ -52,24 +52,28 @@ const Projects = (props) => {
         title='Junction'
         id='junction'
         text='Full Stack Community Builder built in the MERN Stack'
+        url='https://community-junction.herokuapp.com/'
       />
       <ProjectCard 
         background= {`url(${poemverse})`}
         title='Poemverse'
         id='poem'
         text='Full Stack Poetry Anthology Builder built in Django'
+        url='https://poemverse.herokuapp.com/'
       />
       <ProjectCard 
         background= '#f1b7a5'
         title='BirbWatcher'
         id='birb'
-        text='Full Stack Bird Watching Log built in Node + Express '
+        text='Full Stack Bird Watching Log built in Node + Express'
+        url='https://birb-watcher.herokuapp.com/'
       />
       <ProjectCard 
         background= {`url(${magic})`}
         title='Magic Tourney'
         id='magictourney'
         text='Front End Turn-Based Battle Game built in Javascript'
+        url='https://magic-tourney.netlify.app/'
       />
     </div>
   )

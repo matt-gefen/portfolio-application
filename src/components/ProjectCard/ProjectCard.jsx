@@ -37,6 +37,12 @@ const ProjectCard = (props) => {
         }}
         onMouseEnter={handleHover}
         onMouseLeave={handleHover}>
+        <a 
+          href={props.url}
+          id={styles.link}
+          target="_blank"
+          rel="noopener noreferrer">
+          <div id={styles.linkcontainer}>
           { !textDisplay &&
             <div className={styles.projectLogo}>  
               {props.title}
@@ -47,6 +53,8 @@ const ProjectCard = (props) => {
               {props.text}
             </div>
           }
+          </div>
+        </a>  
       </div>
   )
 }
