@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant&family=Dosis&family=Questrial&family=Tajawal&family=Varela+Round&display=swap');
+
 html,
 body,
 #root,
@@ -6,7 +8,8 @@ main {
   height: 100%;
   overflow: scroll;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+  font-family: "Tajawal", sans-serif;
+  background-color: #e9ecef;
 }
 .App {
   text-align: center;
@@ -47,11 +50,18 @@ main {
   }
 }
 
-.nav-bar {
+.navbar {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 30px;
   height: fit-content;
   padding: 40px;
+  margin-bottom: 15px;
+  font-size: 5vw;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: black;
 }

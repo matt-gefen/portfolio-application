@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 import styles from "./Landing.module.css";
 
-import headshot from '../../assets/images/headshot2017.png'
+import headshot from '../../assets/images/matt-beach.jpg'
 import linkedin from '../../assets/icons/linkedin-brands.svg'
 import github from '../../assets/icons/github-square-brands.svg'
 import email from '../../assets/icons/envelope-square-solid.svg'

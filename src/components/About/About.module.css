@@ -18,8 +18,15 @@ h1 {
   margin-left: 20px;
 }
 
+.subheading {
+  margin-top: 15px;
+  margin-bottom: 0px;
+}
+
 .skills {
   display: flex;
+  align-content: center;
+  justify-content: center;
   gap: 20px;
 }
 
@@ -36,4 +43,8 @@ h1 {
   text-align: right;
   width: 20%;
   margin-left: 20px;
+}
+
+.link {
+  margin-bottom: 15px;
 }

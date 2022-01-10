@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 
 import styles from "./About.module.css";
 
-import headshot from '../../assets/images/matt-beach.jpg'
+import headshot from '../../assets/images/avatar.svg'
 
 
 const customStyles = {
@@ -50,7 +50,7 @@ const About = (props) => {
         Software Engineer
       </h1>
       <p className={styles.summary}><i>I am a Boulder based software engineer who loves hiking, reading, video games, and D&D! I'm passionate about Full Stack software development and love building tools that address tangible organizational needs. </i></p>
-      <motion.button
+      {/* <motion.button
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
         onClick={openModal}
@@ -65,7 +65,8 @@ const About = (props) => {
         contentLabel="Skills Modal"
       >
         <button onClick={closeModal}>close</button>
-        <h4>Programming Skills</h4>
+      </Modal> */}
+      <h4 className={styles.subheading}>Programming Skills</h4>
         <div className={styles.skills}>
           <div className={styles.subskills}>
             <h5>Javascript</h5>
@@ -80,7 +81,7 @@ const About = (props) => {
             <h5>HTML/CSS</h5>
           </div>
         </div>
-        <h4>Technical Tools</h4>
+        <h4 className={styles.subheading}>Technical Tools</h4>
         <div className={styles.skills}>
           <div className={styles.subskills}>
             <h5>Snowflake</h5>
@@ -95,13 +96,14 @@ const About = (props) => {
             <h5>Matillion</h5>
           </div>
         </div>
-      </Modal>
+
         <a 
         className={styles.link} 
         href='https://drive.google.com/file/d/1bgmu_M3bELyKMF5upDRMToTq44Qn9GJI/view?usp=sharing'
         target="_blank"
         rel="noopener noreferrer">
           <motion.button
+            className={styles.link} 
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >

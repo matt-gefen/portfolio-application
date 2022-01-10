@@ -5,8 +5,6 @@ import { motion } from 'framer-motion'
 import styles from "./Projects.module.css";
 
 import poemverse from '../../assets/images/tree_background.svg'
-import junction from '../../assets/images/junctionlogo.svg'
-import birb from '../../assets/images/crow-solid.svg'
 import magic from '../../assets/images/particles.gif'
 
 import ProjectCard from '../ProjectCard/ProjectCard';
