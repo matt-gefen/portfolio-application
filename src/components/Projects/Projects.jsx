@@ -9,6 +9,8 @@ import junction from '../../assets/images/junctionlogo.svg'
 import birb from '../../assets/images/crow-solid.svg'
 import magic from '../../assets/images/particles.gif'
 
+import ProjectCard from '../ProjectCard/ProjectCard';
+
 
 const customStyles = {
   content: {
@@ -44,35 +46,27 @@ const Projects = (props) => {
 
   return (
     <div className={styles.projects}>
-      <div 
-        className={styles.projectContainer} id={styles.junction}
-        style={{backgroundColor: '#3873cb'}}>
-          {/* <div className={styles.logoContainer}>
-            <img className = {styles.logoImage} src={junction} alt='junctionLogo'/>
-          </div> */}
-          <div className={styles.projectLogo}>Junction</div>
-      </div>
-      <div 
-        className={styles.projectContainer} id={styles.poem}
-        style={{backgroundImage: `url(${poemverse})`}}
-      >
-        <div className={styles.projectLogo}>Poemverse</div>
-      </div>
-      <div 
-        className={styles.projectContainer} id={styles.birb}
-        style={{backgroundColor: '#f1b7a5'}}
-      >
-          {/* <div className={styles.logoContainer} id={styles.birbImage}>
-            <img className = {styles.logoImage} src={birb} alt='junctionLogo'/>
-          </div> */}
-          <div className={styles.projectLogo}>BirbWatcher</div>
-      </div>
-      <div 
-        className={styles.projectContainer} id={styles.magictourney}
-        style={{backgroundImage: `url(${magic})`}}
-      >
-        <div className={styles.projectLogo}>Magic Tourney</div>
-      </div>
+
+      <ProjectCard 
+        background='#3873cb'
+        title='Junction'
+        id='junction'
+      />
+      <ProjectCard 
+        background= {`url(${poemverse})`}
+        title='Poemverse'
+        id='poem'
+      />
+      <ProjectCard 
+        background= '#f1b7a5'
+        title='BirbWatcher'
+        id='birb'
+      />
+      <ProjectCard 
+        background= {`url(${magic})`}
+        title='Magic Tourney'
+        id='magictourney'
+      />
     </div>
   )
 }
