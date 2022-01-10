@@ -43,8 +43,8 @@ const ProjectCard = (props) => {
             </div>
           }
           { textDisplay &&
-            <div className={styles.projectText}>  
-              Text text test
+            <div className={styles.projectText} id={styles[props.id]}>  
+              {props.text}
             </div>
           }
       </div>

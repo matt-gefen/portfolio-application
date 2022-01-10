@@ -28,13 +28,6 @@
   /* background-position-y: 25%; */
 }
 
-#poem {
-  color: white;
-  text-shadow: 2px 2px 4px #000000;
-  font-family: 'Quicksand', sans-serif;
-  text-align: center;
-}
-
 .projectLogo {
   display: flex;
   align-content: center;
@@ -48,25 +41,27 @@
 
 #junction {
   display: flex;
-  flex-direction: row;
   color: white;
-  /* text-shadow: 2px 2px 4px #000000; */
   font-family: 'Roboto', sans-serif;
   text-align: center;
 }
+
+#poem {
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  font-family: 'Quicksand', sans-serif;
+  text-align: center;
+}
+
 #birb {
   display: flex;
-  flex-direction: row;
   color: white;
-  /* text-shadow: 2px 2px 4px #000000; */
   font-family: 'Cabin', sans-serif;
   text-align: center;
 }
 #magictourney {
   display: flex;
-  flex-direction: row;
   color: white;
-  /* text-shadow: 2px 2px 4px #000000; */
   font-family: 'VT323', monospace;
   text-align: center;
 }
@@ -79,14 +74,10 @@
   width: 20%;
 }
 
-.logoImage {
-  /* width: 50%; */
-  height: 50%;
-}
-
-#birbImage {
-  /* height: 75%; */
-  /* width: 30%; */
-  margin-left: 20px;
-
+.projectText {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding: 15px;
+  font-size: 8vw;
 }

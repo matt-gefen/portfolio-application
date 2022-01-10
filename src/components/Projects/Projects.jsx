@@ -51,21 +51,25 @@ const Projects = (props) => {
         background='#3873cb'
         title='Junction'
         id='junction'
+        text='Full Stack Community Builder built in the MERN Stack'
       />
       <ProjectCard 
         background= {`url(${poemverse})`}
         title='Poemverse'
         id='poem'
+        text='Full Stack Poetry Anthology Builder built in Django'
       />
       <ProjectCard 
         background= '#f1b7a5'
         title='BirbWatcher'
         id='birb'
+        text='Full Stack Bird Watching Log built in Node + Express '
       />
       <ProjectCard 
         background= {`url(${magic})`}
         title='Magic Tourney'
         id='magictourney'
+        text='Front End Turn-Based Battle Game built in Javascript'
       />
     </div>
   )
