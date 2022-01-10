@@ -36,12 +36,9 @@ const ProjectCard = (props) => {
           background: props.background, 
         }}
         onMouseEnter={handleHover}
-        onMouseLeave={handleHover}>
-        <a 
-          href={props.url}
-          id={styles.link}
-          target="_blank"
-          rel="noopener noreferrer">
+        onMouseLeave={handleHover}
+        onClick={handleHover}
+        >
           <div id={styles.linkcontainer}>
           { !textDisplay &&
             <div className={styles.projectLogo}>  
@@ -49,12 +46,25 @@ const ProjectCard = (props) => {
             </div>
           }
           { textDisplay &&
-            <div className={styles.projectText} id={styles[props.id]}>  
+            <div className={styles.projectText}>
+            <div id={styles[props.id]}>  
               {props.text}
+            </div>
+            <a
+              href={props.url}
+              id={styles.link}
+              target="_blank"
+              rel="noopener noreferrer">
+              <motion.button
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+                className={styles.visitapp}>
+                  Visit App
+              </motion.button>
+            </a>
             </div>
           }
           </div>
-        </a>  
       </div>
   )
 }
