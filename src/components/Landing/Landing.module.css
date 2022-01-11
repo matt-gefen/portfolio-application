@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant&family=Dosis&family=Questrial&family=Tajawal&family=Varela+Round&display=swap');
+
 .landing {
   display: flex;
   flex-direction: column;
@@ -8,7 +10,6 @@
 .skillscontent {
   display: flex;
   flex-direction: column;
-  /* align-content: center; */
   justify-content: center;
 }
 
@@ -81,4 +82,8 @@
 .buttonContainer {
   margin-top: 15px;
   margin-bottom: 15px;
+  font-family: "Tajawal", sans-serif;
+}
+.buttonContainer button {
+  font-family: "Tajawal", sans-serif;
 }
