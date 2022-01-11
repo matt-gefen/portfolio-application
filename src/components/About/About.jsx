@@ -45,7 +45,7 @@ const About = (props) => {
         className={styles.headshotContainer}
         style={{backgroundImage: `url(${headshot})`}}
         ></div>
-      <h1>Matt Gefen
+      <h1 className={styles.title}>Matt Gefen
         <br></br>
         Software Engineer
       </h1>

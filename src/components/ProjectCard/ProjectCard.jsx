@@ -33,7 +33,9 @@ const ProjectCard = (props) => {
         className={styles.projectContainer}
         id={styles[props.id]}
         style={{
-          background: props.background, 
+          background: props.background,
+          backgroundRepeat: "no-repeat",
+          backgroundSize:"cover"
         }}
         onMouseEnter={handleHover}
         onMouseLeave={handleHover}
