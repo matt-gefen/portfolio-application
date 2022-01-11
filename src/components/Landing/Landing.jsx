@@ -101,8 +101,7 @@ const Landing = (props) => {
         <motion.button
           onClick={() => setSkillsOpen(isSkillsOpen => !isSkillsOpen)} 
           className={styles.subheading} 
-          style={{width:"40%"}}
-          whileHover={{ scale: 1.1 }}
+          whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.9 }}>
             <h4>Programming Skills</h4>
         </motion.button>
@@ -136,8 +135,7 @@ const Landing = (props) => {
           <motion.button 
           onClick={() => setToolsOpen(isToolsOpen => !isToolsOpen)} 
           className={styles.subheading} 
-          style={{width:"40%"}}
-          whileHover={{ scale: 1.1 }}
+          whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.9 }}>
             <h4>Technical Tools</h4>
           </motion.button>
@@ -172,13 +170,15 @@ const Landing = (props) => {
         href='https://drive.google.com/file/d/1bgmu_M3bELyKMF5upDRMToTq44Qn9GJI/view?usp=sharing'
         target="_blank"
         rel="noopener noreferrer">
+          <div className={styles.buttonContainer}>
           <motion.button
-            className={styles.link} 
-            whileHover={{ scale: 1.1 }}
+            className={styles.subheading} 
+            whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.9 }}
           >
-          View Resume
+          <h4>Resume</h4>
         </motion.button>
+        </div>
       </a>
 {/*      
       <motion.div
