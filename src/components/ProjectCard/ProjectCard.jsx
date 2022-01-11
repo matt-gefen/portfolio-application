@@ -29,7 +29,7 @@ const ProjectCard = (props) => {
   }
 
   return (
-    <div 
+    <motion.div 
         className={styles.projectContainer}
         id={styles[props.id]}
         style={{
@@ -40,6 +40,7 @@ const ProjectCard = (props) => {
         onMouseEnter={handleHover}
         onMouseLeave={handleHover}
         onClick={handleHover}
+        // whileHover={{ scale: 1.02 }}
         >
           <div id={styles.linkcontainer}>
           { !textDisplay &&
@@ -67,7 +68,7 @@ const ProjectCard = (props) => {
             </div>
           }
           </div>
-      </div>
+      </motion.div>
   )
 }
 

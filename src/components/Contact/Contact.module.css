@@ -46,8 +46,16 @@
   align-content: left;
   justify-content: space-between;
   gap: 10px;
+  width: 70%;
 }
 
 .submit {
   margin-bottom: 20px;
+  margin-top: 20px;
+  background-color: #7967ff;
+  color: white;
+  font-weight: 500;
+  font-size: 1rem;
+  width: 75%;
+  border: none;
 }

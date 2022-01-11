@@ -35,9 +35,9 @@ const Contact = (props) => {
         </div>
         </div>
         <motion.button
-            whileHover={{ scale: 1.1 }}
+            whileHover={{ scale: 1.04 }}
             whileTap={{ scale: 0.9 }}
-            style={{backgroundColor: "white", border: "black solid 1px", padding: "4px"}}
+            style={{padding: "4px"}}
             type="submit"
             className={styles.submit}>
               Submit
