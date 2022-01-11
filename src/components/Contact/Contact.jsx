@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 import styles from "./Contact.module.css";
 
-import nature from '../../assets/images/twin-lakes.jpeg'
+import avatar from '../../assets/images/avatar.svg'
 // import headshot from '../../assets/images/i-peaks.jpeg'
 import linkedin from '../../assets/icons/linkedin-brands.svg'
 import github from '../../assets/icons/github-square-brands.svg'
@@ -15,27 +15,33 @@ const Contact = (props) => {
     <div className={styles.contact}>
       <div 
         className={styles.headshotContainer}
-        style={{backgroundImage: `url(${nature})`}}>
+        style={{backgroundImage: `url(${avatar})`}}>
       </div>
+      <p>
+        Feel free to reach out! I'd love to hear from you!
+      </p>
       <form name="contact" method="POST" data-netlify="true">
-        <p>
-          <label>Name: <input type="text" name="name" /></label>   
-        </p>
-        <p>
-          <label>Email: <input type="email" name="email" /></label>
-        </p>
-        <p>
-          <label>Message: <textarea name="message"></textarea></label>
-        </p>
-        <p>
+        <div className={styles.form}>
+        <div className={styles.leftform}>
+          <label>Name:</label>   
+          <label>Email: </label>
+          <label>Message: </label>
+        </div>
+
+        <div className={styles.rightform}>
+          <input type="text" name="name" />
+          <input type="email" name="email" />
+          <textarea name="message"></textarea>
+        </div>
+        </div>
         <motion.button
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
             style={{backgroundColor: "white", border: "black solid 1px", padding: "4px"}}
-            type="submit">
+            type="submit"
+            className={styles.submit}>
               Submit
           </motion.button>
-        </p>
       </form>
       <div id='icons'>
         <a href='https://www.linkedin.com/in/mattgefen/'
@@ -70,8 +76,6 @@ const Contact = (props) => {
         </motion.button>
         </a>
       </div>
-
-
     </div>
   )
 }

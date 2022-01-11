@@ -24,3 +24,30 @@
   background-size: cover;
   background-position-y: 55%;
 }
+
+.form {
+  display: flex;
+  /* flex-direction: column; */
+  align-content: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.leftform {
+  display: flex;
+  flex-direction: column;
+  align-content: left;
+  justify-content: space-between;
+}
+
+.rightform {
+  display: flex;
+  flex-direction: column;
+  align-content: left;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.submit {
+  margin-bottom: 20px;
+}

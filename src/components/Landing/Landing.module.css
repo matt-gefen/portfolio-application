@@ -16,8 +16,15 @@
   width: 40px;
 }
 
-h1 {
+.title {
   text-align: center;
+  margin-bottom: 10px;
+}
+
+.bio {
+  margin-top: 0;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .headshotContainer {
@@ -27,4 +34,29 @@ h1 {
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: 25%;
+}
+
+.skills {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  /* gap: 20px; */
+}
+
+.subskills {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  gap: 10px;
+  width: 30%;
+}
+
+.logoskill {
+  width: 6rem;
+  height: 6rem;
+}
+
+.link {
+  margin-bottom: 15px;
 }
