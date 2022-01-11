@@ -5,6 +5,13 @@
   justify-content: center;
 }
 
+.skillscontent {
+  display: flex;
+  flex-direction: column;
+  /* align-content: center; */
+  justify-content: center;
+}
+
 #icons {
   display: flex;
   align-items: center;
@@ -40,6 +47,7 @@
   display: flex;
   align-content: center;
   justify-content: center;
+  margin-top: 15px;
   /* gap: 20px; */
 }
 
@@ -58,5 +66,10 @@
 }
 
 .link {
+  margin-bottom: 15px;
+}
+
+.buttonContainer {
+  margin-top: 15px;
   margin-bottom: 15px;
 }

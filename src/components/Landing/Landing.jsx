@@ -1,4 +1,4 @@
-import React from 'react'
+import {React, useState} from 'react'
 import { motion } from 'framer-motion';
 
 import styles from "./Landing.module.css";
@@ -26,7 +26,33 @@ import mongodblogo from '../../assets/icons/mongodb.svg'
 import matillionlogo from '../../assets/icons/matillion.svg'
 import fivetranlogo from '../../assets/icons/fivetran-ar21.svg'
 
+const variants = {
+  open: { opacity: 1, x: 0, height: '100%' },
+  closed: { opacity: 0, x: "-100%", height: '-100%'},
+}
+
+const container = {
+  hidden: { opacity: 0, display: "none"},
+  show: {
+    opacity: 1,
+    display: "flex",
+    transition: {
+      staggerChildren: 0.7,
+      staggerDirection: 1
+    }
+  }
+}
+
+const item = {
+  hidden: { opacity: 0},
+  show: { opacity: 1 }
+}
+
 const Landing = (props) => {
+
+  const [isSkillsOpen, setSkillsOpen] = useState(false)
+  const [isToolsOpen, setToolsOpen] = useState(false)
+
   return (
     <div className={styles.landing}>
       <div 
@@ -71,38 +97,76 @@ const Landing = (props) => {
         </motion.button>
         </a>
       </div>
-      <h4 className={styles.subheading}>Programming Skills</h4>
-        <div className={styles.skills}>
-          <div className={styles.subskills}>
-          <div><img className = {styles.logoskill} src={jslogo} alt='javascript' /></div>
-          <div><img className = {styles.logoskill} src={djangologo} alt='python' /></div>
-          <div><img className = {styles.logoskill} src={reactlogo} alt='react' /></div>
-          <div><img className = {styles.logoskill} src={nodelogo} alt='node.js' /></div>
-          </div>
-          <div className={styles.subskills}>
-            <div><img className = {styles.logoskill} src={pythonlogo} alt='python' /></div>
-            <div><img className = {styles.logoskill} src={expresslogo} alt='python' /></div>
-            <div><img className = {styles.logoskill} src={csslogo} alt='react' /></div>
-            <div><img className = {styles.logoskill} src={htmllogo} alt='node.js' /></div>
-          </div>
-\
+      <div className={styles.buttonContainer}>
+        <motion.button
+          onClick={() => setSkillsOpen(isSkillsOpen => !isSkillsOpen)} 
+          className={styles.subheading} 
+          style={{width:"40%"}}
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}>
+            <h4>Programming Skills</h4>
+        </motion.button>
         </div>
-        <h4 className={styles.subheading}>Technical Tools</h4>
-        <div className={styles.skills}>
-        <div className={styles.subskills}>
-          <div><img className = {styles.logoskill} src={mongodblogo} alt='javascript' /></div>
-          <div><img className = {styles.logoskill} src={dbtlogo} alt='python' /></div>
-          <div><img className = {styles.logoskill} src={tableaulogo} alt='react' /></div>
-          <div><img className = {styles.logoskill} src={fivetranlogo} alt='node.js' /></div>
-          </div>
-          <div className={styles.subskills}>
-            <div><img className = {styles.logoskill} src={postgreslogo} alt='python' /></div>
-            <div><img className = {styles.logoskill} src={snowflakelogo} alt='python' /></div>
-            <div><img className = {styles.logoskill} src={awslogo} alt='react' /></div>
-            <div><img className = {styles.logoskill} src={matillionlogo} alt='node.js' /></div>
-          </div>
+        <motion.div 
+          className={styles.skills}
+          animate={isSkillsOpen ? "show" : "hidden"}
+          variants={container}>
+          <motion.div 
+            initial='hidden'
+            animate={isSkillsOpen ? "show" : "hidden"}
+            variants={container}
+            className={styles.subskills}>
+            <div><img className = {styles.logoskill} src={jslogo} alt='javascript' /></div>
+            <div><img className = {styles.logoskill} src={djangologo} alt='python' /></div>
+            <div><img className = {styles.logoskill} src={reactlogo} alt='react' /></div>
+            <div><img className = {styles.logoskill} src={nodelogo} alt='node.js' /></div>
+          </motion.div>
+          <motion.div 
+            initial='hidden'
+            animate={isSkillsOpen ? "show" : "hidden"}
+            variants={container}
+            className={styles.subskills}>
+            <div variants={item}><img className = {styles.logoskill} src={pythonlogo} alt='python' /></div>
+            <div variants={item}><img className = {styles.logoskill} src={expresslogo} alt='python' /></div>
+            <div variants={item}><img className = {styles.logoskill} src={csslogo} alt='react' /></div>
+            <div variants={item}><img className = {styles.logoskill} src={htmllogo} alt='node.js' /></div>
+          </motion.div>
+        </motion.div>
+        <div className={styles.buttonContainer}>
+          <motion.button 
+          onClick={() => setToolsOpen(isToolsOpen => !isToolsOpen)} 
+          className={styles.subheading} 
+          style={{width:"40%"}}
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}>
+            <h4>Technical Tools</h4>
+          </motion.button>
         </div>
-
+        <motion.div 
+          className={styles.skills}
+          animate={isToolsOpen ? "show" : "hidden"}
+          variants={container}>
+          <motion.div 
+            initial='hidden'
+            animate={isToolsOpen ? "show" : "hidden"}
+            variants={container}
+            className={styles.subskills}>
+            <div><img className = {styles.logoskill} src={mongodblogo} alt='mongo' /></div>
+            <div><img className = {styles.logoskill} src={dbtlogo} alt='dbt' /></div>
+            <div><img className = {styles.logoskill} src={tableaulogo} alt='tableay' /></div>
+            <div><img className = {styles.logoskill} src={fivetranlogo} alt='fivetran' /></div>
+          </motion.div>
+          <motion.div 
+            initial='hidden'
+            animate={isToolsOpen ? "show" : "hidden"}
+            variants={container}
+            className={styles.subskills}>
+            <div variants={item}><img className = {styles.logoskill} src={postgreslogo} alt='postgres' /></div>
+            <div variants={item}><img className = {styles.logoskill} src={snowflakelogo} alt='snowflake' /></div>
+            <div variants={item}><img className = {styles.logoskill} src={awslogo} alt='aws' /></div>
+            <div variants={item}><img className = {styles.logoskill} src={matillionlogo} alt='matillion' /></div>
+          </motion.div>
+        </motion.div>
         <a 
         className={styles.link} 
         href='https://drive.google.com/file/d/1bgmu_M3bELyKMF5upDRMToTq44Qn9GJI/view?usp=sharing'
@@ -116,6 +180,14 @@ const Landing = (props) => {
           View Resume
         </motion.button>
       </a>
+{/*      
+      <motion.div
+      animate={isOpen ? "open" : "closed"}
+      variants={variants}
+      // style={{height:"40px"}}
+    >
+CONTENT BABY
+    </motion.div> */}
     </div>
   )
 }
