@@ -46,11 +46,16 @@
 
 .headshotContainer {
   height: 300px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: 25%;
+}
+
+.headshot {
+  max-width:auto;
+  height:100%;
 }
 
 .skills {
@@ -100,13 +105,16 @@
   }
 
   .headshotContainer {
-    height: 20rem;
-    width: 60%;
-    margin-left: 20%;
-    margin-right: 20%;
+    height: 490px;
+    margin-left: 10px;
+    margin-right: 10px;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position-y: 25%;
+  }
+  
+  .headshot {
+    max-width:auto;
+    height:100%;
   }
   
   #icons {

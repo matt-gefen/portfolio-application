@@ -56,8 +56,8 @@ const Landing = (props) => {
   return (
     <div className={styles.landing}>
       <div 
-        className={styles.headshotContainer}
-        style={{backgroundImage: `url(${headshot})`}}>
+        className={styles.headshotContainer}>
+          <img className={styles.headshot} src={headshot} alt="headshot" />
       </div>
       <h1 className={styles.title}>Matt Gefen
         <br></br>

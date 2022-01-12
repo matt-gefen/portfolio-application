@@ -42,8 +42,8 @@ const Contact = (props) => {
   return (
     <div className={styles.contact}>
       <div 
-        className={styles.headshotContainer}
-        style={{backgroundImage: `url(${avatar})`}}>
+        className={styles.headshotContainer}>
+          <img className={styles.headshot} src={avatar} alt="avatar" />
       </div>
       <p>
         Feel free to reach out! I'd love to hear from you!
