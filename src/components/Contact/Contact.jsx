@@ -16,8 +16,6 @@ const Contact = (props) => {
 	const [email, setEmail] = React.useState('')
 	const [message, setMessage] = React.useState('')
 
-  const close = props.close
-
 	function encode(data) {
 		return Object.keys(data)
 			.map(
@@ -26,17 +24,20 @@ const Contact = (props) => {
 			.join('&')
 	}
 
-	function handleSubmit(e) {
-		e.preventDefault()
-    close()
-		fetch('/', {
-			method: 'POST',
-			headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-			body: encode({ 'form-name': 'contact', name, email, message }),
-		})
-			.then(() => alert('Thank you for reaching out!'))
+  const handleSubmit = (event) => {
+    event.preventDefault()
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({
+        "form-name": "contact",
+        name,
+        email,
+        message
+      })})
+      .then(() => alert('Thank you for reaching out!'))
 			.catch((error) => alert(error))
-	}
+  }
 
   return (
     <div className={styles.contact}>
