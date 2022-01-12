@@ -58,4 +58,71 @@
   font-size: 1rem;
   width: 75%;
   border: none;
+  padding-bottom: 0;
+  /* font-family: "Tajawal", sans-serif; */
+}
+
+@media screen and (min-width: 650px) {
+
+  .contact {
+    font-size: 1.5rem;
+  }
+
+  .headshotContainer {
+    height: 30rem;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-repeat: no-repeat;
+    background-size:90%;
+    background-position-x: 50%;
+    background-position-y: 42%;
+  }
+
+  .form {
+    display: flex;
+    /* flex-direction: column; */
+    align-content: center;
+    justify-content: center;
+    gap: 20px;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+
+  .submit {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background-color: #4533cd;
+    color: white;
+    font-weight: 500;
+    font-size: 1.5rem;
+    width: 40%;
+    border: none;
+    padding-bottom: 0;
+    /* font-family: "Tajawal", sans-serif; */
+  }
+  #icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .icon {
+    width: 4rem;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .headshotContainer {
+    height: 30rem;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position-x: 50%;
+    background-position-y: 42%;
+  }
 }

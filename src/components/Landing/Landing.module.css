@@ -87,3 +87,42 @@
 .buttonContainer button {
   font-family: "Tajawal", sans-serif;
 }
+
+@media screen and (min-width: 650px) {
+  .title {
+    font-size: 3.5rem;
+  }
+
+  .bio {
+    font-size: 1.5rem;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
+  .headshotContainer {
+    height: 20rem;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 25%;
+  }
+  
+  #icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .icon {
+    width: 4rem;
+  }
+
+  .logoskill {
+    width: 10rem;
+    height: 10rem;
+  }
+  
+}

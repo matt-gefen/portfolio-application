@@ -63,8 +63,8 @@ const Landing = (props) => {
         <br></br>
         Software Engineer
       </h1>
-      <p className={styles.bio}><i>Full-Stack Software Developer based in Boulder, Colorado! I bring a passion for learning and problem solving to every project I collaborate on. Talk to me about hiking, reading, video games, and D&D.</i></p>
-      <div id='icons'>
+      <p className={styles.bio}><i>Full-Stack Software Developer based in Boulder, Colorado! I bring a passion for learning and problem solving to every project I collaborate on. Talk to me about hiking, books, video games, and D&D.</i></p>
+      <div id={styles.icons}>
         <a href='https://www.linkedin.com/in/mattgefen/'
           target="_blank"
           rel="noopener noreferrer">

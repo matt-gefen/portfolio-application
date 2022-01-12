@@ -62,7 +62,7 @@ const ProjectCard = (props) => {
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
                 className={styles.visitapp}>
-                  Visit App
+                  <div className={styles.innerbutton}>Visit App</div>
               </motion.button>
             </a>
             </div>
