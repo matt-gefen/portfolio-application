@@ -1,6 +1,7 @@
 
 import React from 'react'
 import { motion } from 'framer-motion';
+import { useNavigate } from 'react-router-dom';
 
 import styles from "./Contact.module.css";
 
@@ -11,6 +12,8 @@ import github from '../../assets/icons/github-square-brands.svg'
 import emaillogo from '../../assets/icons/envelope-square-solid.svg'
 
 const Contact = (props) => {
+
+  const navigate = useNavigate()
 
   const [name, setName] = React.useState('')
 	const [email, setEmail] = React.useState('')
@@ -35,7 +38,7 @@ const Contact = (props) => {
         email,
         message
       })})
-      .then(() => alert('Thank you for reaching out!'))
+      .then(() => alert('Thank you for reaching out!')).then(navigate('/'))
 			.catch((error) => alert(error))
   }
 
