@@ -14,6 +14,7 @@ main {
 }
 .App {
   text-align: center;
+  width: 100%;
 }
 
 .App-logo {
@@ -57,7 +58,7 @@ main {
   justify-content: center;
   gap: 30px;
   height: fit-content;
-  padding: 40px;
+  /* padding: 40px; */
   margin-bottom: 15px;
   /* font-size: 5rem; */
 }
