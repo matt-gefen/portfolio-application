@@ -71,3 +71,18 @@ main {
   font-family: "Tajawal", sans-serif;
 
 }
+@media screen and (min-width: 650px) {
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    height: fit-content;
+    /* padding: 10px; */
+    /* margin-bottom: 15px; */
+    /* font-size: 5rem; */
+  }
+  .navlink{
+    font-size: 2.5rem;
+  }
+}
