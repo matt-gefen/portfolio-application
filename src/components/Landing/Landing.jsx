@@ -167,7 +167,7 @@ const Landing = (props) => {
         </motion.div>
         <a 
         className={styles.link} 
-        href='https://drive.google.com/file/d/1bgmu_M3bELyKMF5upDRMToTq44Qn9GJI/view?usp=sharing'
+        href='https://drive.google.com/file/d/18DaunWXR8ICa8IBcy9Lqxy5efylAP4b3/view?usp=sharing'
         target="_blank"
         rel="noopener noreferrer">
           <div className={styles.buttonContainer}>
