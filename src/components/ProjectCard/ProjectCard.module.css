@@ -19,6 +19,7 @@
 
 .projectContainer {
   height: 200px;
+  width: 90%;
   margin-left: 20px;
   margin-right: 20px;
   background-repeat: no-repeat;
@@ -30,7 +31,7 @@
   /* background-size: contain; */
   /* background-position-y: 25%; */
 }
-
+/* 
 #linkcontainer {
   display: flex;
   flex-direction: column;
@@ -38,7 +39,7 @@
   justify-content: center;
   width: 100%;
   height: 100%;
-}
+} */
 
 .projectLogo {
   display: flex;
@@ -46,36 +47,53 @@
   justify-content: center;
   flex-direction: column;
   /* height: fit-content; */
-  font-size: 15vw;
+  font-size: 13vw;
   /* text-align: ; */
   /* width: fit-content; */
 }
 
 #junction {
   display: flex;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
   color: white;
   font-family: 'Roboto', sans-serif;
   text-align: center;
+  justify-content: center;
 }
 
 #poem {
   color: white;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
   text-shadow: 2px 2px 4px #000000;
   font-family: 'Quicksand', sans-serif;
   text-align: center;
+  justify-content: center;
 }
 
 #birb {
   display: flex;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
   color: white;
   font-family: 'Cabin', sans-serif;
   text-align: center;
+  justify-content: center;
 }
+
 #magictourney {
   display: flex;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
   color: white;
   font-family: 'VT323', monospace;
   text-align: center;
+  justify-content: center;
 }
 
 .logoContainer {
@@ -131,18 +149,19 @@
   align-content: center;
   justify-content: center;
   gap: 10px;
+  width: 100%;
   /* background-size: contain; */
   /* background-position-y: 25%; */
 }
 
-#linkcontainer {
+/* #linkcontainer {
   display: flex;
   flex-direction: column;
   align-content: center;
   justify-content: center;
   width: 100%;
   height: 100%;
-}
+} */
 
 .projectLogo {
   display: flex;
@@ -154,14 +173,17 @@
   /* text-align: ; */
   /* width: fit-content; */
 }
+
 .projectText {
   display: flex;
   flex-direction: column;
   align-content: center;
   justify-content: center;
+  text-align: center;
   padding: 15px;
   font-size: 4vw;
 }
+
 .innerbutton {
   /* font-family: "Tajawal", sans-serif; */
   font-size: 1.5rem;
