@@ -6,6 +6,7 @@ body,
 main {
   margin: 0;
   height: 100%;
+  width: 100%;
   overflow: scroll;
   box-sizing: border-box;
   font-family: "Tajawal", sans-serif;
