@@ -8,9 +8,36 @@ import avatar from '../../assets/images/avatar.svg'
 // import headshot from '../../assets/images/i-peaks.jpeg'
 import linkedin from '../../assets/icons/linkedin-brands.svg'
 import github from '../../assets/icons/github-square-brands.svg'
-import email from '../../assets/icons/envelope-square-solid.svg'
+import emaillogo from '../../assets/icons/envelope-square-solid.svg'
 
 const Contact = (props) => {
+
+  const [name, setName] = React.useState('')
+	const [email, setEmail] = React.useState('')
+	const [message, setMessage] = React.useState('')
+
+  const close = props.close
+
+	function encode(data) {
+		return Object.keys(data)
+			.map(
+				(key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key])
+			)
+			.join('&')
+	}
+
+	function handleSubmit(e) {
+		e.preventDefault()
+    close()
+		fetch('/', {
+			method: 'POST',
+			headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+			body: encode({ 'form-name': 'contact', name, email, message }),
+		})
+			.then(() => alert('Thank you for reaching out!'))
+			.catch((error) => alert(error))
+	}
+
   return (
     <div className={styles.contact}>
       <div 
@@ -20,7 +47,7 @@ const Contact = (props) => {
       <p>
         Feel free to reach out! I'd love to hear from you!
       </p>
-      <form name="contact" method="POST" data-netlify="true">
+      <form name="contact" method="POST" data-netlify="true" onSubmit={handleSubmit}>
         <div className={styles.form}>
         <div className={styles.leftform}>
           <label>Name:</label>   
@@ -29,9 +56,9 @@ const Contact = (props) => {
         </div>
 
         <div className={styles.rightform}>
-          <input type="text" name="name" />
-          <input type="email" name="email" />
-          <textarea name="message"></textarea>
+          <input type="text" name="name" onChange={(e) => setName(e.target.value)}/>
+          <input type="email" name="email" onChange={(e) => setEmail(e.target.value)}/>
+          <textarea name="message" onChange={(e) => setMessage(e.target.value)}></textarea>
         </div>
         </div>
         <motion.button
@@ -72,7 +99,7 @@ const Contact = (props) => {
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
           style={{backgroundColor: "transparent", border: "none"}}>
-            <img className={styles.icon} src={email} alt='email-logo'/>
+            <img className={styles.icon} src={emaillogo} alt='email-logo'/>
         </motion.button>
         </a>
       </div>
