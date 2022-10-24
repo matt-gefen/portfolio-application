@@ -2,11 +2,16 @@ import { motion } from 'framer-motion';
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 
-import styles from "./Nav.module.css";
-
 const Nav = (props) => {
   return (
     <nav className='navbar' style={{background: '#f8f9fa'}}>
+      <NavLink to='/'>        
+        <button
+            className='navbar'
+        >
+              Matt Gefen
+        </button>
+        </NavLink>
       <NavLink to='/'>        
         <motion.button
             whileHover={{ scale: 1.1 }}

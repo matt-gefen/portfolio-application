@@ -1,0 +1,37 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 10px;
+  height: fit-content;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: '#d8f3dc';
+}
+
+.navbar a {
+  text-decoration: none;
+  color: black;
+}
+
+.navlink {
+  font-size: 1.5rem;
+  font-family: "Tajawal", sans-serif;
+  background-color: "transparent";
+  border: "none"
+
+}
+@media screen and (min-width: 650px) {
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    height: fit-content;
+  }
+  .navlink{
+    font-size: 2.5rem;
+  }
+}

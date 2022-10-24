@@ -52,40 +52,6 @@ main {
   }
 }
 
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  /* gap: 30px; */
-  height: fit-content;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  margin-bottom: 15px;
-  /* font-size: 5rem; */
-}
-
-.navbar a {
-  text-decoration: none;
-  color: black;
-}
-
-.navlink {
-  font-size: 1.5rem;
-  font-family: "Tajawal", sans-serif;
-
-}
-@media screen and (min-width: 650px) {
-  .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-    height: fit-content;
-    /* padding: 10px; */
-    /* margin-bottom: 15px; */
-    /* font-size: 5rem; */
-  }
-  .navlink{
-    font-size: 2.5rem;
-  }
-}
+@import './components/Nav.scss';
+@import './components/Contact.scss';
+@import './components/Landing.scss';
