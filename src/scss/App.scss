@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Assistant&family=Dosis&family=Questrial&family=Tajawal&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant&family=Dosis&family=Questrial&family=Fira+Sans&family=Tajawal&family=Varela+Round&display=swap');
 
 html,
 body,
@@ -9,8 +9,11 @@ main {
   width: 100%;
   // overflow: scroll;
   box-sizing: border-box;
-  font-family: "Tajawal", sans-serif;
-  background-color: #e9ecef;
+  // font-family: "Tajawal", sans-serif;
+  font-family: "Fira Sans", sans-serif;
+  background-color: #0B2545;
+  // color: #8DA9C4;
+  color: #CAFFD0;
 }
 .App {
   text-align: center;

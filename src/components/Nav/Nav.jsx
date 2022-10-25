@@ -4,26 +4,15 @@ import { NavLink } from 'react-router-dom'
 
 const Nav = (props) => {
   return (
-    <nav className='navbar' style={{background: '#f8f9fa'}}>
+    <nav className='navbar'>
       <NavLink to='/'>        
         <button
             className='navlink'
-            style={{backgroundColor: "transparent", border: "none"}}
         >
               Matt Gefen
         </button>
         </NavLink>
-      <NavLink to='/'>        
-        <motion.button
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
-            style={{backgroundColor: "transparent", border: "none"}}
-            className='navlink'
-        >
-              About
-        </motion.button>
-        </NavLink>
-      <NavLink to='/projects'>        
+      {/* <NavLink to='/projects'>        
         <motion.button
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
@@ -32,7 +21,7 @@ const Nav = (props) => {
         >
               Projects
         </motion.button>
-        </NavLink>
+        </NavLink> */}
       {/* <NavLink to='/about'>About</NavLink> */}
     </nav>
   )

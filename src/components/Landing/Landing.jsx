@@ -54,20 +54,25 @@ const Landing = (props) => {
   return (
     <div className='landing'>
       <div className='landing-header-section'>
-        <div className='headshot-container'><img className='headshot' src={headshot} alt="headshot" /></div>
         <div className='landing-title-section'>
           <h1 className='title'>
             Matt Gefen
             <br></br>
-            Software Engineer
           </h1>
+          <h2 className='subtitle'>
+            Software Engineer
+          </h2>
           <p className='bio'>
-            <i>
-              Full-Stack Software Developer based in Boulder, Colorado!
-              I bring a passion for learning and problem solving to every project I collaborate on. Talk to me about hiking, books, video games, and D&D.
-            </i>
+            <b>
+              Full-Stack Software Engineer based in Boulder, Colorado.<br></br>
+              I bring a passion for learning and problem solving to every project I collaborate on.<br></br>
+              Talk to me about hiking, books, video games, and D&D.
+            </b>
           </p>
-          <div className='icons-landing'>
+      </div>
+        {/* <div className='headshot-container'>
+        <img className='headshot' src={headshot} alt="headshot" />
+        <div className='icons-landing'>
         <a href='https://www.linkedin.com/in/mattgefen/'
           target="_blank"
           rel="noopener noreferrer">
@@ -92,21 +97,16 @@ const Landing = (props) => {
         <a href='mailto: matt.gefen@gmail.com'
           target="_blank"
           rel="noopener noreferrer">
-        <motion.button
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.9 }}
-          style={{backgroundColor: "transparent", border: "none"}}>
-            <img className='icon-landing' src={email} alt='email-logo'/>
-        </motion.button>
-        </a>
+              <motion.button
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+                style={{backgroundColor: "transparent", border: "none"}}>
+              <img className='icon-landing' src={email} alt='email-logo'/>
+              </motion.button>
+            </a>
+          </div>
+        </div> */}
       </div>
-
-        </div>
-
-      </div>
-      {/* <div 
-        className='headshotContainer'>
-      </div> */}
       <div className='buttonContainer'>
         <motion.button
           onClick={() => setSkillsOpen(isSkillsOpen => !isSkillsOpen)} 
@@ -141,7 +141,7 @@ const Landing = (props) => {
             <div variants={item}><img className = 'logoskill' src={htmllogo} alt='node.js' /></div>
           </motion.div>
         </motion.div>
-        <div className='buttonContainer'>
+        {/* <div className='buttonContainer'>
           <motion.button 
           onClick={() => setToolsOpen(isToolsOpen => !isToolsOpen)} 
           className='subheading'
@@ -173,9 +173,9 @@ const Landing = (props) => {
             <div variants={item}><img className ='logoskill' src={snowflakelogo} alt='snowflake' /></div>
             <div variants={item}><img className ='logoskill'src={awslogo} alt='aws' /></div>
             <div variants={item}><img className ='logoskill'src={matillionlogo} alt='matillion' /></div>
-          </motion.div>
-        </motion.div>
-        <a 
+          </motion.div> */}
+        {/* </motion.div> */}
+        {/* <a 
         className='link' 
         href='https://drive.google.com/file/d/18DaunWXR8ICa8IBcy9Lqxy5efylAP4b3/view?usp=sharing'
         target="_blank"
@@ -189,7 +189,7 @@ const Landing = (props) => {
           <h4>Resume</h4>
         </motion.button>
         </div>
-      </a>
+      </a> */}
 {/*      
       <motion.div
       animate={isOpen ? "open" : "closed"}

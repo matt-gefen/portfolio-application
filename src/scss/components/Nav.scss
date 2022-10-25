@@ -8,12 +8,15 @@
   padding-right: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
-  background-color: '#d8f3dc';
-}
+  background-color: #0B2545;
+  color: #8DA9C4;}
 
-.navbar a {
+.navbar a button {
   text-decoration: none;
-  color: black;
+  color: #CAFFD0;
+  background-color: transparent;
+  border: none;
+  // color: black;
 }
 
 .navlink {
@@ -21,17 +24,19 @@
   font-family: "Tajawal", sans-serif;
   background-color: "transparent";
   border: "none"
-
 }
 @media screen and (min-width: 650px) {
   .navbar {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
     gap: 30px;
     height: fit-content;
   }
-  .navlink{
+  .navlink {
     font-size: 1rem;
+    font-family: "Tajawal", sans-serif;
+    background-color: "transparent";
+    border: "none"
   }
 }
