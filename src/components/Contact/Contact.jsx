@@ -43,8 +43,8 @@ const Contact = (props) => {
   return (
     <div className='contact'>
       <div 
-        className='headshotContainer'>
-          <img className='headshot' src={avatar} alt="avatar" />
+        className='headshot-container-contact'>
+          <img className='headshot-contact' src={avatar} alt="avatar" />
       </div>
       <p>
         Feel free to reach out! I'd love to hear from you!

@@ -53,16 +53,21 @@ const Landing = (props) => {
 
   return (
     <div className='landing'>
-      <div 
-        className='headshotContainer'>
-          <img className='headshot' src={headshot} alt="headshot" />
-      </div>
-      <h1 className='title'>Matt Gefen
-        <br></br>
-        Software Engineer
-      </h1>
-      <p className='bio'><i>Full-Stack Software Developer based in Boulder, Colorado! I bring a passion for learning and problem solving to every project I collaborate on. Talk to me about hiking, books, video games, and D&D.</i></p>
-      <div id='icons'>
+      <div className='landing-header-section'>
+        <div className='headshot-container'><img className='headshot' src={headshot} alt="headshot" /></div>
+        <div className='landing-title-section'>
+          <h1 className='title'>
+            Matt Gefen
+            <br></br>
+            Software Engineer
+          </h1>
+          <p className='bio'>
+            <i>
+              Full-Stack Software Developer based in Boulder, Colorado!
+              I bring a passion for learning and problem solving to every project I collaborate on. Talk to me about hiking, books, video games, and D&D.
+            </i>
+          </p>
+          <div className='icons-landing'>
         <a href='https://www.linkedin.com/in/mattgefen/'
           target="_blank"
           rel="noopener noreferrer">
@@ -70,7 +75,7 @@ const Landing = (props) => {
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
             style={{backgroundColor: "transparent", border: "none"}}>
-              <img className='icon' src={linkedin} alt='linkedin-logo' />
+              <img className='icon-landing' src={linkedin} alt='linkedin-logo' />
           </motion.button>
         </a>
         <a href='https://github.com/matt-gefen'
@@ -81,20 +86,27 @@ const Landing = (props) => {
             whileTap={{ scale: 0.9 }}
             style={{backgroundColor: "transparent", border: "none"}}
           >
-            <img className='icon' src={github} alt='github-logo'/>
+            <img className='icon-landing' src={github} alt='github-logo'/>
           </motion.button>
         </a>
-        <a class='link' href='mailto: matt.gefen@gmail.com'
+        <a href='mailto: matt.gefen@gmail.com'
           target="_blank"
           rel="noopener noreferrer">
         <motion.button
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
           style={{backgroundColor: "transparent", border: "none"}}>
-            <img className='icon' src={email} alt='email-logo'/>
+            <img className='icon-landing' src={email} alt='email-logo'/>
         </motion.button>
         </a>
       </div>
+
+        </div>
+
+      </div>
+      {/* <div 
+        className='headshotContainer'>
+      </div> */}
       <div className='buttonContainer'>
         <motion.button
           onClick={() => setSkillsOpen(isSkillsOpen => !isSkillsOpen)} 

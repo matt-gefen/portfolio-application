@@ -16,14 +16,14 @@
   width: 40px;
 }
 
-.headshotContainer {
+.headshot-container-contact {
   height: 300px;
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.headshot {
+.headshot-contact {
   max-width:auto;
   height:100%;
 }
@@ -71,7 +71,7 @@
     font-size: 1.5rem;
   }
 
-  .headshotContainer {
+  .headshot-container-contact {
     height: 490px;
     width: 50%;
     margin-left: 25%;
@@ -80,7 +80,7 @@
     background-size: cover;
   }
   
-  .headshot {
+  .headshot-contact {
     max-width:auto;
     height:100%;
   }
@@ -108,14 +108,14 @@
     padding-bottom: 0;
     /* font-family: "Tajawal", sans-serif; */
   }
-  #icons {
+  .icons-contact {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 20px;
   }
   
-  .icon {
+  .icon-contact {
     width: 4rem;
   }
 }
