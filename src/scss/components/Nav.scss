@@ -11,17 +11,22 @@
   background-color: #0B2545;
   color: #8DA9C4;}
 
-.navbar a button {
+.navbar button {
   text-decoration: none;
-  color: #CAFFD0;
+  color: #8DA9C4;
   background-color: transparent;
   border: none;
   // color: black;
 }
 
+.navlink:hover {
+  // text-decoration: underline;
+  color:#CAFFD0;
+}
+
 .navlink {
-  font-size: 1rem;
-  font-family: "Tajawal", sans-serif;
+  font-size: 1.5rem;
+  font-family: "Fira Sans", sans-serif;
   background-color: "transparent";
   border: "none"
 }
@@ -32,11 +37,5 @@
     justify-content: left;
     gap: 30px;
     height: fit-content;
-  }
-  .navlink {
-    font-size: 1rem;
-    font-family: "Tajawal", sans-serif;
-    background-color: "transparent";
-    border: "none"
   }
 }

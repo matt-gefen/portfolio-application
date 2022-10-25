@@ -62,13 +62,20 @@ const Landing = (props) => {
           <h2 className='subtitle'>
             Software Engineer
           </h2>
-          <p className='bio'>
-            <b>
-              Full-Stack Software Engineer based in Boulder, Colorado.<br></br>
-              I bring a passion for learning and problem solving to every project I collaborate on.<br></br>
-              Talk to me about hiking, books, video games, and D&D.
-            </b>
-          </p>
+          <div className='landing-bio-section'>
+            <p className='bio'>
+              <b>
+                I'm currently working at <a className='par-link' target="_blank" href='https://roadtripnation.com/'>Roadtrip Nation</a> to build accessible, educational web-based experiences 
+                for students looking for career guidance.
+              </b>
+            </p>
+            <p className='bio'>
+              <b>Full-Stack Software Engineer based in Boulder, Colorado with a passion for learning and problem solving.</b>
+            </p>
+            <p className='bio'>
+              <b>Talk to me about hiking, books, video games, and D&D.</b>
+            </p>
+          </div>
       </div>
         {/* <div className='headshot-container'>
         <img className='headshot' src={headshot} alt="headshot" />
@@ -107,7 +114,7 @@ const Landing = (props) => {
           </div>
         </div> */}
       </div>
-      <div className='buttonContainer'>
+      {/* <div className='buttonContainer'>
         <motion.button
           onClick={() => setSkillsOpen(isSkillsOpen => !isSkillsOpen)} 
           className='subheading'
@@ -140,7 +147,7 @@ const Landing = (props) => {
             <div variants={item}><img className = 'logoskill' src={csslogo} alt='react' /></div>
             <div variants={item}><img className = 'logoskill' src={htmllogo} alt='node.js' /></div>
           </motion.div>
-        </motion.div>
+        </motion.div> */}
         {/* <div className='buttonContainer'>
           <motion.button 
           onClick={() => setToolsOpen(isToolsOpen => !isToolsOpen)} 

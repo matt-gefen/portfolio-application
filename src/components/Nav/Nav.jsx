@@ -5,13 +5,24 @@ import { NavLink } from 'react-router-dom'
 const Nav = (props) => {
   return (
     <nav className='navbar'>
-      <NavLink to='/'>        
-        <button
+      <div className='navbar-left'>
+        <NavLink to='/'>        
+          <button
             className='navlink'
-        >
+          >
               Matt Gefen
-        </button>
+          </button>
+          </NavLink>
+          |
+          <NavLink to='/'>        
+          <button
+              className='navlink'
+          >
+              RadiantMoon
+          </button>
         </NavLink>
+      </div>
+
       {/* <NavLink to='/projects'>        
         <motion.button
             whileHover={{ scale: 1.1 }}
