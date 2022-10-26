@@ -7,13 +7,12 @@ main {
   margin: 0;
   height: 100%;
   width: 100%;
-  // overflow: scroll;
   box-sizing: border-box;
-  // font-family: "Tajawal", sans-serif;
   font-family: "Fira Sans", sans-serif;
-  background-color: #0B2545;
-  // color: #8DA9C4;
-  color: #CAFFD0;
+  // background-color: #0B2545;
+  background-color: #11202C;
+  // color: #CAFFD0;
+  color: #74B3CE;
 }
 .App {
   text-align: center;
@@ -58,3 +57,4 @@ main {
 @import './components/Nav.scss';
 @import './components/Contact.scss';
 @import './components/Landing.scss';
+@import './components/About.scss'

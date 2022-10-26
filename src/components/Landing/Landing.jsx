@@ -1,10 +1,11 @@
 import {React, useState} from 'react'
-import { motion } from 'framer-motion';
 
-import headshot from '../../assets/images/matt-beach.jpg'
-import linkedin from '../../assets/icons/linkedin-brands.svg'
-import github from '../../assets/icons/github-square-brands.svg'
-import email from '../../assets/icons/envelope-square-solid.svg'
+import About from './About/About';
+import {ReactComponent as LinkedinLogo} from '../../assets/icons/linkedin-brands.svg'
+import {ReactComponent as GithubLogo} from '../../assets/icons/github-square-brands.svg'
+import {ReactComponent as EmailLogo} from '../../assets/icons/envelope-square-solid.svg'
+
+import { motion } from 'framer-motion';
 
 import jslogo from '../../assets/icons/javascript.svg'
 import pythonlogo from '../../assets/icons/python-vertical.svg'
@@ -64,56 +65,22 @@ const Landing = (props) => {
           </h2>
           <div className='landing-bio-section'>
             <p className='bio'>
+              <b>Full-Stack Software Engineer based in Boulder, Colorado with a passion for learning and problem solving.</b>
+            </p>
+            <p className='bio'>
               <b>
                 I'm currently working at <a className='par-link' target="_blank" href='https://roadtripnation.com/'>Roadtrip Nation</a> to build accessible, educational web-based experiences 
                 for students looking for career guidance.
               </b>
             </p>
             <p className='bio'>
-              <b>Full-Stack Software Engineer based in Boulder, Colorado with a passion for learning and problem solving.</b>
-            </p>
-            <p className='bio'>
               <b>Talk to me about hiking, books, video games, and D&D.</b>
             </p>
           </div>
       </div>
-        {/* <div className='headshot-container'>
-        <img className='headshot' src={headshot} alt="headshot" />
-        <div className='icons-landing'>
-        <a href='https://www.linkedin.com/in/mattgefen/'
-          target="_blank"
-          rel="noopener noreferrer">
-          <motion.button
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
-            style={{backgroundColor: "transparent", border: "none"}}>
-              <img className='icon-landing' src={linkedin} alt='linkedin-logo' />
-          </motion.button>
-        </a>
-        <a href='https://github.com/matt-gefen'
-          target="_blank"
-          rel="noopener noreferrer">
-          <motion.button
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
-            style={{backgroundColor: "transparent", border: "none"}}
-          >
-            <img className='icon-landing' src={github} alt='github-logo'/>
-          </motion.button>
-        </a>
-        <a href='mailto: matt.gefen@gmail.com'
-          target="_blank"
-          rel="noopener noreferrer">
-              <motion.button
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
-                style={{backgroundColor: "transparent", border: "none"}}>
-              <img className='icon-landing' src={email} alt='email-logo'/>
-              </motion.button>
-            </a>
-          </div>
-        </div> */}
+
       </div>
+      <About />
       {/* <div className='buttonContainer'>
         <motion.button
           onClick={() => setSkillsOpen(isSkillsOpen => !isSkillsOpen)} 

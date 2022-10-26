@@ -12,8 +12,8 @@ function App() {
       <Nav/>
       <Routes>
         <Route path="/" element={<Landing />}/>
-        <Route path="/projects" element={<Projects />}/>
-        <Route path="/contact" element={<Contact />}/>
+        {/* <Route path="/projects" element={<Projects />}/> */}
+        {/* <Route path="/contact" element={<Contact />}/> */}
       </Routes>
     </div>
   );

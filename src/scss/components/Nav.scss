@@ -8,12 +8,16 @@
   padding-right: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
-  background-color: #0B2545;
-  color: #8DA9C4;}
+  // background-color: #0B2545;
+  background-color: #11202C;
+  // color: #8DA9C4;
+  color: #74B3CE;
+}
 
 .navbar button {
   text-decoration: none;
-  color: #8DA9C4;
+  // color: #8DA9C4;
+  color: #74B3CE;
   background-color: transparent;
   border: none;
   // color: black;
@@ -21,14 +25,16 @@
 
 .navlink:hover {
   // text-decoration: underline;
-  color:#CAFFD0;
+  // color:#CAFFD0;
+  color:#09BC8A;
 }
 
 .navlink {
   font-size: 1.5rem;
   font-family: "Fira Sans", sans-serif;
   background-color: "transparent";
-  border: "none"
+  border: "none";
+  color: #74B3CE;
 }
 @media screen and (min-width: 650px) {
   .navbar {

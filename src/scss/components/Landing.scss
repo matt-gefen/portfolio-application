@@ -33,31 +33,21 @@
   width: 50%;
 }
 
-.icons-landing {
-  display: flex;
-  align-items: center;
-  justify-content: left;
-  gap: 20px;
-  margin-left: 30px;
-}
-
-.icon-landing {
-  width: 3rem;
-}
-
 .title {
   font-size: 4.5rem;
   text-align: left;
   margin-left: 30px;
   margin-top: 0px;
   margin-bottom: 0px;
+  color: #09BC8A;
 }
 
 .subtitle {
   text-align: left;
   margin-top: 0px;
   margin-bottom: 10px;
-  color:#8DA9C4;
+  // color:#8DA9C4;
+  color:#74B3CE;
   margin-left: 30px;
   font-size: 2.5rem;
 }
@@ -69,7 +59,8 @@
 
 .bio {
   margin-top: 0;
-  color:#AEC2D5;
+  // color:#AEC2D5;
+  color:#A4CEDF;
   text-align: left;
   font-size: 20px;
   margin-left: 30px;
@@ -78,11 +69,13 @@
 
 .par-link {
   position: relative;
-  color: #CAFFD0;
+  // color: #CAFFD0;
+  color: #09BC8A;
   text-decoration: none;
 }
 .par-link:hover {
-  color: #CAFFD0;
+  // color: #CAFFD0;
+  color: #09BC8A;
   // text-decoration: underline;
 }
 .par-link::before {
@@ -93,7 +86,8 @@
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #CAFFD0;
+  // background-color: #CAFFD0;
+  background-color: #09BC8A;
   transform: scaleX(0);
   transform-origin: top left;
   transition: transform 0.3s ease;

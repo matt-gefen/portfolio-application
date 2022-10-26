@@ -23,6 +23,10 @@ const Nav = (props) => {
         </NavLink>
       </div>
 
+      <div className='nav-right'>
+        <a className='navlink' href="/#about" style={{textDecoration: "none"}}>About</a>
+      </div>
+
       {/* <NavLink to='/projects'>        
         <motion.button
             whileHover={{ scale: 1.1 }}
