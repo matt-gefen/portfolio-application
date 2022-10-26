@@ -22,9 +22,13 @@ const Nav = (props) => {
           </button>
         </NavLink>
       </div>
-
+      <div></div>
       <div className='nav-right'>
         <a className='navlink' href="/#about" style={{textDecoration: "none"}}>About</a>
+        {/* <div> | </div> */}
+        <a className='navlink' href="/#experience" style={{textDecoration: "none"}}>Experience</a>
+        {/* <div> | </div>  */}
+        <a className='navlink' href="/#projects" style={{textDecoration: "none"}}>Projects</a>
       </div>
 
       {/* <NavLink to='/projects'>        

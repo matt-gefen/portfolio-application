@@ -1,3 +1,14 @@
+ul { list-style: none; } /* Remove default bullets */
+
+li::before {
+    content: "\25C9"; /* Unicode bullet symbol */
+    color: #09BC8A;  /* Bullet color */
+	
+	/* Optional tweaks */
+    font-weight: bold;
+    padding-right: 6px;
+}
+
 .about {
     margin-left: 60px;
 }
@@ -10,11 +21,25 @@
     margin-bottom: 0px;
     color: #09BC8A;
 }
+.section-subheader {
+    font-size: 2rem;
+    text-align: left;
+    // margin-left: 30px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    color: #74B3CE;
+}
+
+.section-content {
+    font-size: 20px;
+    color: #A4CEDF;
+    margin-top: 0px;
+}
 
 .about-main-section {
     display: flex;
     margin-left: 30px;
-    align-items: center;
+    align-items: flex-start;
     gap: 20px;
     height: fit-content;
 }
@@ -28,6 +53,7 @@
     height: 500px;
     width: 50%;
     margin-top: 20px;
+    margin-right: 20px;
 }
 
 .icons-landing {
@@ -53,6 +79,19 @@
     // fill: #CAFFD0;
     fill: #09BC8A;
       // fill: #AEC2D5;
+}
+
+.skills-list {
+    // margin-left: 20px;
+    display: flex;
+    gap: 40px;
+}
+.skills-ul {
+    padding-left: 0px;
+}
+.skills-li {
+    color: #A4CEDF;
+    font-size: 18px;
 }
   // .icon-landing svg::before path {
   //     // content: "";

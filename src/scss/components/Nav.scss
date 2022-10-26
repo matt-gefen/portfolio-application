@@ -1,7 +1,7 @@
 .navbar {
   display: flex;
   align-items: center;
-  justify-content: left;
+  justify-content: space-between;
   gap: 10px;
   height: fit-content;
   padding-left: 20px;
@@ -40,7 +40,7 @@
   .navbar {
     display: flex;
     align-items: center;
-    justify-content: left;
+    // justify-content: left;
     gap: 30px;
     height: fit-content;
   }

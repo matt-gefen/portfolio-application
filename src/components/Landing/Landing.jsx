@@ -1,51 +1,11 @@
 import {React, useState} from 'react'
 
 import About from './About/About';
-import {ReactComponent as LinkedinLogo} from '../../assets/icons/linkedin-brands.svg'
-import {ReactComponent as GithubLogo} from '../../assets/icons/github-square-brands.svg'
-import {ReactComponent as EmailLogo} from '../../assets/icons/envelope-square-solid.svg'
+// import {ReactComponent as LinkedinLogo} from '../../assets/icons/linkedin-brands.svg'
+// import {ReactComponent as GithubLogo} from '../../assets/icons/github-square-brands.svg'
+// import {ReactComponent as EmailLogo} from '../../assets/icons/envelope-square-solid.svg'
 
-import { motion } from 'framer-motion';
-
-import jslogo from '../../assets/icons/javascript.svg'
-import pythonlogo from '../../assets/icons/python-vertical.svg'
-import reactlogo from '../../assets/icons/react.svg'
-import nodelogo from '../../assets/icons/nodejs.svg'
-import djangologo from '../../assets/icons/django.svg'
-import expresslogo from '../../assets/icons/expressjs.svg'
-import htmllogo from '../../assets/icons/html5.svg'
-import csslogo from '../../assets/icons/css3.svg'
-
-import postgreslogo from '../../assets/icons/postgresql.svg'
-import snowflakelogo from '../../assets/icons/snowflake.svg'
-import dbtlogo from '../../assets/icons/dbt-logo.svg'
-import awslogo from '../../assets/icons/amazon-web-services.svg'
-import tableaulogo from '../../assets/icons/tableau-logo.svg'
-import mongodblogo from '../../assets/icons/mongodb.svg'
-import matillionlogo from '../../assets/icons/matillion.svg'
-import fivetranlogo from '../../assets/icons/fivetran-ar21.svg'
-
-const variants = {
-  open: { opacity: 1, x: 0, height: '100%' },
-  closed: { opacity: 0, x: "-100%", height: '-100%'},
-}
-
-const container = {
-  hidden: { opacity: 0, display: "none"},
-  show: {
-    opacity: 1,
-    display: "flex",
-    transition: {
-      staggerChildren: 0.7,
-      staggerDirection: 1
-    }
-  }
-}
-
-const item = {
-  hidden: { opacity: 0},
-  show: { opacity: 1 }
-}
+// import { motion } from 'framer-motion';
 
 const Landing = (props) => {
 
@@ -65,16 +25,14 @@ const Landing = (props) => {
           </h2>
           <div className='landing-bio-section'>
             <p className='bio'>
-              <b>Full-Stack Software Engineer based in Boulder, Colorado with a passion for learning and problem solving.</b>
+              Full-Stack Software Engineer based in Boulder, Colorado with a passion for learning and problem solving.
             </p>
             <p className='bio'>
-              <b>
                 I'm currently working at <a className='par-link' target="_blank" href='https://roadtripnation.com/'>Roadtrip Nation</a> to build accessible, educational web-based experiences 
                 for students looking for career guidance.
-              </b>
             </p>
             <p className='bio'>
-              <b>Talk to me about hiking, books, video games, and D&D.</b>
+              Talk to me about hiking, books, video games, and D&D.
             </p>
           </div>
       </div>
