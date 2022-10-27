@@ -1,6 +1,7 @@
 import {React, useState} from 'react'
 
 import About from './About/About';
+import Experience from './Experience/Experience';
 // import {ReactComponent as LinkedinLogo} from '../../assets/icons/linkedin-brands.svg'
 // import {ReactComponent as GithubLogo} from '../../assets/icons/github-square-brands.svg'
 // import {ReactComponent as EmailLogo} from '../../assets/icons/envelope-square-solid.svg'
@@ -39,6 +40,7 @@ const Landing = (props) => {
 
       </div>
       <About />
+      <Experience />
       {/* <div className='buttonContainer'>
         <motion.button
           onClick={() => setSkillsOpen(isSkillsOpen => !isSkillsOpen)} 

@@ -23,6 +23,13 @@
   // color: black;
 }
 
+.nav-right {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+
+}
+
 .navlink:hover {
   // text-decoration: underline;
   // color:#CAFFD0;

@@ -1,29 +1,8 @@
-import {React, useState} from 'react'
-import { motion } from 'framer-motion';
-
-
+import {React} from 'react'
 import headshot from '../../../assets/images/matt-beach.jpg'
 import {ReactComponent as LinkedinLogo} from '../../../assets/icons/linkedin-brands.svg'
 import {ReactComponent as GithubLogo} from '../../../assets/icons/github-square-brands.svg'
 import {ReactComponent as EmailLogo} from '../../../assets/icons/envelope-square-solid.svg'
-
-import jslogo from '../../../assets/icons/javascript.svg'
-import pythonlogo from '../../../assets/icons/python-vertical.svg'
-import reactlogo from '../../../assets/icons/react.svg'
-import nodelogo from '../../../assets/icons/nodejs.svg'
-import djangologo from '../../../assets/icons/django.svg'
-import expresslogo from '../../../assets/icons/expressjs.svg'
-import htmllogo from '../../../assets/icons/html5.svg'
-import csslogo from '../../../assets/icons/css3.svg'
-
-import postgreslogo from '../../../assets/icons/postgresql.svg'
-import snowflakelogo from '../../../assets/icons/snowflake.svg'
-import dbtlogo from '../../../assets/icons/dbt-logo.svg'
-import awslogo from '../../../assets/icons/amazon-web-services.svg'
-import tableaulogo from '../../../assets/icons/tableau-logo.svg'
-import mongodblogo from '../../../assets/icons/mongodb.svg'
-import matillionlogo from '../../../assets/icons/matillion.svg'
-import fivetranlogo from '../../../assets/icons/fivetran-ar21.svg'
 
 const About = (props) => {
     return (
@@ -33,9 +12,9 @@ const About = (props) => {
             </div>
             <div className='about-main-section'>
                 <div className='about-main-content'>
-                    <div className='section-subheader'>
+                    {/* <div className='section-subheader'>
                         Bio
-                    </div>
+                    </div> */}
                     <p className='section-content'>
                         Hi folks! I’m Matt Gefen and I love building things with code!
                     </p>

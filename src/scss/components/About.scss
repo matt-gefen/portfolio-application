@@ -11,6 +11,7 @@ li::before {
 
 .about {
     margin-left: 60px;
+    margin-bottom: 15px;
 }
 
 .section-header {
@@ -50,7 +51,7 @@ li::before {
     align-items: flex-start;
     justify-content: flex-start;
     text-align: start;
-    height: 500px;
+    height: fit-content;
     width: 50%;
     margin-top: 20px;
     margin-right: 20px;
