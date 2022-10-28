@@ -5,7 +5,7 @@
             "subtabs": [
                 {
                     "title": "Full Stack Engineer",
-                    "company": "Roadtrip Nation",
+                    "subtitle": "Roadtrip Nation",
                     "time": "Feb 2022 - Current",
                     "link": "https://roadtripnation.com/",
                     "bullets": [
@@ -16,7 +16,7 @@
                 },
                 {
                     "title": "Analytics Engineer",
-                    "company": "Year Up",
+                    "subtitle": "Year Up",
                     "time": "Aug 2020 - May 2021",
                     "link": "https://www.yearup.org/",
                     "bullets": [
@@ -28,7 +28,7 @@
                 },
                 {
                     "title": "Sales and Market Research Analyst",
-                    "company": "Year Up",
+                    "subtitle": "Year Up",
                     "link": "https://www.yearup.org/",
                     "time": "Nov 2018 - Aug 2020",
                     "bullets": [
@@ -40,7 +40,7 @@
             ]
         },
         {
-            "tabName": "Educational",
+            "tabName": "Academic",
             "subtabs": [
                 {
                     "title": "General Assembly",
