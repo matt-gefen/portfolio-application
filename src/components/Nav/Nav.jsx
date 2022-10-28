@@ -13,14 +13,14 @@ const Nav = (props) => {
               Matt Gefen
           </button>
           </NavLink>
-          |
+          {/* |
           <NavLink to='/'>        
           <button
               className='navlink'
           >
               RadiantMoon
           </button>
-        </NavLink>
+        </NavLink> */}
       </div>
       <div></div>
       <div className='nav-right'>

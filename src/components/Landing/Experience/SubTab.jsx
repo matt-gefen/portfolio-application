@@ -4,7 +4,9 @@ const SubTab = ({title, index, setSelectedSubTab, selectedSubTab}) => {
     return (
         <div 
             className={`sub-tab ${selectedSubTab === index ? 'selected-sub' : ''}`}
-            onClick={() => setSelectedSubTab(index)}>
+            onClick={() => {
+                setSelectedSubTab(index)
+                }}>
             {title}
         </div>
     )

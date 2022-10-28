@@ -6,7 +6,7 @@
                 {
                     "title": "Full Stack Engineer",
                     "subtitle": "Roadtrip Nation",
-                    "time": "Feb 2022 - Current",
+                    "time": "February 2022 - Current",
                     "link": "https://roadtripnation.com/",
                     "bullets": [
                         "Build interactive and accessible web-courses geared towards connecting students with tangible career paths using React.js",
@@ -17,7 +17,7 @@
                 {
                     "title": "Analytics Engineer",
                     "subtitle": "Year Up",
-                    "time": "Aug 2020 - May 2021",
+                    "time": "August 2020 - May 2021",
                     "link": "https://www.yearup.org/",
                     "bullets": [
                         "Developed conformed dimensional models using dbt to enable consistent reporting of critical data",
@@ -30,7 +30,7 @@
                     "title": "Sales and Market Research Analyst",
                     "subtitle": "Year Up",
                     "link": "https://www.yearup.org/",
-                    "time": "Nov 2018 - Aug 2020",
+                    "time": "November 2018 - August 2020",
                     "bullets": [
                         "Automated reporting of key sales metrics to internal leadership and board members with SQL and Python",
                         "Developed standardized analytics tools in Tableau to provide users with accessible and real-time access to demand KPIs",
@@ -45,14 +45,14 @@
                 {
                     "title": "General Assembly",
                     "subtitle": "Software Engineering Immersive",
-                    "time": "Sept 2021 - Jan 2021",
+                    "time": "September 2021 - January 2021",
                     "link": "https://generalassemb.ly/education/software-engineering-immersive-remote"
                 },
                 {
                     "title": "Northeastern University",
                     "subtitle": "Bachelor's Degree",
                     "additionalText": "Management Information Systems & Marketing",
-                    "time": "Aug 2013 - May 2017",
+                    "time": "August 2013 - May 2017",
                     "link": "https://damore-mckim.northeastern.edu/"
                 }
             ]
