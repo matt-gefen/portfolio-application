@@ -1,78 +1,59 @@
-import React from 'react'
-import Modal from 'react-modal'
-import { motion } from 'framer-motion'
+import React, {useState, useEffect} from 'react'
 
-import styles from "./Projects.module.css";
+import { map } from 'lodash';
 
 import poemverse from '../../assets/images/tree_background.svg'
 import magic from '../../assets/images/particles.gif'
 
-import ProjectCard from '../ProjectCard/ProjectCard';
+// import ProjectCard from '../ProjectCard/ProjectCard';
+import PrimaryTab from '../Landing/Experience/PrimaryTab'
 
-
-const customStyles = {
-  content: {
-    display: 'flex',
-    flexDirection: 'column',
-    top: '50%',
-    left: '50%',
-    right: 'auto',
-    bottom: 'auto',
-    marginRight: '-50%',
-    transform: 'translate(-50%, -50%)',
-    width: '75%',
-  },
-};
 
 const Projects = (props) => {
+  const projects = require('./data/projects.json')
+  // const [tabs, setSelectedTab] = useState(0);
+  const [selectedTab, setSelectedTab] = useState(0);
+  const [selectedInfo, setSelectedInfo] = useState(projects.projects[selectedTab]);
+  // const [selectedSubTab, setSelectedSubTab] = useState(0);
 
-  let subtitle;
-  const [modalIsOpen, setIsOpen] = React.useState(false);
-
-  function openModal() {
-    setIsOpen(true);
+  const setPrimaryTab = (index) => {
+      setSelectedTab(index);
+      // setSelectedSubTab(0);
   }
 
-  function afterOpenModal() {
-    // references are now sync'd and can be accessed.
-    subtitle.style.color = '#f00';
-  }
+  const tabs = map(projects.projects, (element, index) => {
+      return <PrimaryTab
+                  title={element.title}
+                  index={index}
+                  setSelectedTab={setPrimaryTab}
+                  selectedTab={selectedTab}
+                  section={'projects-tab'}
+                  />
+                  
+  })
 
-  function closeModal() {
-    setIsOpen(false);
-  }
+  useEffect(() => { 
+    setSelectedInfo(projects.projects[selectedTab]);  
+},[selectedTab, projects]);
 
   return (
-    <div className={styles.projects}>
-
-      <ProjectCard 
-        background='#3873cb'
-        title='Junction'
-        id='junction'
-        text='Full Stack Community Builder built in the MERN Stack'
-        url='https://community-junction.herokuapp.com/'
-      />
-      <ProjectCard 
-        background= {`url(${poemverse})`}
-        title='Poemverse'
-        id='poem'
-        text='Full Stack Poetry Anthology Builder built in Django'
-        url='https://poemverse.herokuapp.com/'
-      />
-      <ProjectCard 
-        background= '#f1b7a5'
-        title='BirbWatcher'
-        id='birb'
-        text='Full Stack Bird Watching Log built in Node + Express'
-        url='https://birb-watcher.herokuapp.com/'
-      />
-      <ProjectCard 
-        background= {`url(${magic})`}
-        title='Magic Tourney'
-        id='magictourney'
-        text='Front End Turn-Based Battle Game built in Javascript'
-        url='https://magic-tourney.netlify.app/'
-      />
+    <div className="projects" id="projects">
+      <div className='projects-title'>Projects</div>
+      <div className='projects-main-section'>
+        <div className='primary-tabs projects-primary-tabs'>
+          {tabs}
+        </div>
+        <div className='project-content'>
+          <div className='project-header'>
+            <div className='project-title'>{selectedInfo.title}</div>
+          </div>
+                        {/* {selectedInfo.bullets &&
+                            selectedInfo.bullets.map((element) => {
+                                return <div className='experience-bullet'>{element}</div>
+                            })
+                        } */}
+        </div>
+      </div>
     </div>
   )
 }

@@ -58,8 +58,9 @@ const Experience = (props) => {
                         <div className='experience-title'>{selectedInfo.title}</div>
                     </div>
                     <div className='experience-subheader'>
-                        <a className='experience-subtitle' target='blank' href={selectedInfo.link}>{selectedInfo.subtitle} </a>
-                        {/* <div className='icon-arrow'><SquareArrow /></div> */}
+                        <a className='experience-subtitle' target='blank' href={selectedInfo.link}>
+                            {selectedInfo.subtitle}
+                        </a>
                         <div className='experience-time'>{selectedInfo.time}</div>
                     </div>
                     <div className='experience-bullets'>

@@ -1,9 +1,8 @@
 import {React} from 'react'
 
-const PrimaryTab = ({title, index, setSelectedTab, selectedTab}) => {
+const PrimaryTab = ({title, index, setSelectedTab, selectedTab, section}) => {
     return (
-        <div className={`primary-tab ${selectedTab === index ? 'selected' : ''}`} onClick={() => {
-            
+        <div className={`primary-tab ${section} ${selectedTab === index ? 'selected' : ''}`} onClick={() => {
             setSelectedTab(index)
             }}>
             {title}

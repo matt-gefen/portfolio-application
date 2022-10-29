@@ -1,0 +1,16 @@
+{
+    "projects" : [
+        {
+            "background":"#3873cb",
+            "title":"Junction",
+            "text":"Full Stack Community Builder built in the MERN Stack",
+            "url":"https://community-junction.herokuapp.com/"
+        },
+        {
+            "background":"#3873cb",
+            "title":"Poemverse",
+            "text":"Full Stack Poetry Anthology Builder built in Django",
+            "url":"https://poemverse.herokuapp.com/"
+        }
+    ]
+}
