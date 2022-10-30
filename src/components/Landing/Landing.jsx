@@ -2,7 +2,7 @@ import {React, useState} from 'react'
 
 import About from './About/About';
 import Experience from './Experience/Experience';
-import Projects from '../Projects/Projects';
+import Projects from './Projects/Projects';
 // import {ReactComponent as LinkedinLogo} from '../../assets/icons/linkedin-brands.svg'
 // import {ReactComponent as GithubLogo} from '../../assets/icons/github-square-brands.svg'
 // import {ReactComponent as EmailLogo} from '../../assets/icons/envelope-square-solid.svg'

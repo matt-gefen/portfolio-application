@@ -2,11 +2,9 @@ import React, {useState, useEffect} from 'react'
 
 import { map } from 'lodash';
 
-import poemverse from '../../assets/images/tree_background.svg'
-import magic from '../../assets/images/particles.gif'
-
 // import ProjectCard from '../ProjectCard/ProjectCard';
-import PrimaryTab from '../Landing/Experience/PrimaryTab'
+import PrimaryTab from '../Experience/PrimaryTab'
+import ProjectCard from './ProjectCard';
 
 
 const Projects = (props) => {
@@ -27,10 +25,21 @@ const Projects = (props) => {
                   index={index}
                   setSelectedTab={setPrimaryTab}
                   selectedTab={selectedTab}
-                  section={'projects-tab'}
+                  // section={'projects-tab'}
                   />
                   
   })
+
+  const cards = map(projects.projects, (element, index) => {
+    return <ProjectCard
+                title={element.title}
+                text={element.text}
+                liveurl={element.liveurl}
+                ghurl={element.ghurl}
+                // section={'projects-tab'}
+                />
+                
+})
 
   useEffect(() => { 
     setSelectedInfo(projects.projects[selectedTab]);  
@@ -40,18 +49,12 @@ const Projects = (props) => {
     <div className="projects" id="projects">
       <div className='projects-title'>Projects</div>
       <div className='projects-main-section'>
-        <div className='primary-tabs projects-primary-tabs'>
+        {/* <div className='primary-tabs projects-primary-tabs'> */}
+        {/* <div className='primary-tabs'>
           {tabs}
-        </div>
+        </div> */}
         <div className='project-content'>
-          <div className='project-header'>
-            <div className='project-title'>{selectedInfo.title}</div>
-          </div>
-                        {/* {selectedInfo.bullets &&
-                            selectedInfo.bullets.map((element) => {
-                                return <div className='experience-bullet'>{element}</div>
-                            })
-                        } */}
+          {cards}
         </div>
       </div>
     </div>
