@@ -19,7 +19,10 @@ const About = (props) => {
                         I started my career in the data analytics space, discovering a passion for development as I moved into analytics + data engineering.
                     </p>
                     <p className='section-content'>
-                    After an incredible learning experience in General Assembly’s Software Engineering Immersive in late 2021, I fully jumped into Software Engineering. 
+                        After an incredible learning experience in <a className='par-link' target="_blank" href='https://generalassemb.ly/education/software-engineering-immersive-remote'>General Assembly’s Software Engineering Immersive</a> in late 2021, I fully jumped into Software Engineering. 
+                    </p>
+                    <p className='section-content'>
+                        Now I work at <a className='par-link' target="_blank" href='https://roadtripnation.com/'>Roadtrip Nation</a> as a Full Stack Engineer working primarily in React!
                     </p>
                     <div className='section-subheader'>
                         Skills + Technologies
