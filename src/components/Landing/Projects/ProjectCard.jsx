@@ -16,6 +16,8 @@ const ProjectCard = ({title, text, liveurl, ghurl}) => {
         <div className='project-card-footer'>
             <a
                 href={liveurl}
+                target="_blank"
+                rel="noopener noreferrer"
             >
                 <div
                     className="linkout"
@@ -25,6 +27,8 @@ const ProjectCard = ({title, text, liveurl, ghurl}) => {
             </a>
             <a
                 href={ghurl}
+                target="_blank"
+                rel="noopener noreferrer"
             >
                 <div
                     className="linkout"

@@ -12,9 +12,6 @@ const About = (props) => {
             </div>
             <div className='about-main-section'>
                 <div className='about-main-content'>
-                    {/* <div className='section-subheader'>
-                        Bio
-                    </div> */}
                     <p className='section-content'>
                         Hi folks! I’m Matt Gefen and I love building things with code!
                     </p>
@@ -47,10 +44,26 @@ const About = (props) => {
                             <li className='skills-li'>Unity</li>
                         </ul>
                     </div>
+                    <div className='skills-list-mobile'>
+                        <ul className='skills-ul'>
+                            <li className='skills-li'>Javascript</li>
+                            <li className='skills-li'>React</li>
+                            <li className='skills-li'>Express</li>
+                            <li className='skills-li'>Node</li>
+                            <li className='skills-li'>MongoDB</li>
+                        </ul>
+                        <ul className='skills-ul'>
+                            <li className='skills-li'>Python</li>
+                            <li className='skills-li'>Django</li>
+                            <li className='skills-li'>Postgres</li>
+                            <li className='skills-li'>C#</li>
+                            <li className='skills-li'>Unity</li>
+                        </ul>
+                    </div>
                 </div>
                 <div className='headshot-container'>
                     <img className='headshot' src={headshot} alt="headshot" />
-                    <div className='icons-landing'>
+                    {/* <div className='icons-landing'>
                         <a href='https://github.com/matt-gefen'
                             target="_blank"
                             rel="noopener noreferrer">
@@ -68,7 +81,7 @@ const About = (props) => {
                         >
                             <div className='icon-landing'><EmailLogo /></div>                            
                         </a>
-                </div>
+                </div> */}
             </div>
             </div>
         </div>

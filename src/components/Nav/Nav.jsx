@@ -2,6 +2,11 @@ import { motion } from 'framer-motion';
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 
+import {ReactComponent as LinkedinLogo} from '../../assets/icons/linkedin-brands.svg'
+import {ReactComponent as GithubLogo} from '../../assets/icons/github-square-brands.svg'
+import {ReactComponent as EmailLogo} from '../../assets/icons/envelope-square-solid.svg'
+
+
 const Nav = (props) => {
   return (
     <nav className='navbar'>
@@ -13,6 +18,26 @@ const Nav = (props) => {
               Matt Gefen
           </button>
           </NavLink>
+          <div className='icons-landing'>
+                        <a href='https://github.com/matt-gefen'
+                            target="_blank"
+                            rel="noopener noreferrer">
+                                <div className='icon-landing'><GithubLogo /></div>
+                        </a>
+                        <a href='https://www.linkedin.com/in/mattgefen/'
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <div className='icon-landing'><LinkedinLogo /></div>
+                        </a>
+                        <a href='mailto: matt.gefen@gmail.com'
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <div className='icon-landing'><EmailLogo /></div>                            
+                        </a>
+                </div>
+
           {/* |
           <NavLink to='/'>        
           <button
