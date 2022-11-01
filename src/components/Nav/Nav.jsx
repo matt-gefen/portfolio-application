@@ -13,7 +13,7 @@ const Nav = (props) => {
       <div className='navbar-left'>
         <NavLink to='/'>        
           <button
-            className='navlink'
+            className='navlink name'
           >
               Matt Gefen
           </button>
@@ -55,18 +55,6 @@ const Nav = (props) => {
         {/* <div> | </div>  */}
         <a className='navlink' href="/#projects" style={{textDecoration: "none"}}>Projects</a>
       </div>
-
-      {/* <NavLink to='/projects'>        
-        <motion.button
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
-            style={{backgroundColor: "transparent", border: "none"}}
-            className='navlink'
-        >
-              Projects
-        </motion.button>
-        </NavLink> */}
-      {/* <NavLink to='/about'>About</NavLink> */}
     </nav>
   )
 }
