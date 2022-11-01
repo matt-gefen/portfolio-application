@@ -1,0 +1,29 @@
+{
+    "projects" : [
+        {
+            "title":"Junction",
+            "text":"Full Stack Community Builder built in the MERN Stack",
+            "liveurl":"https://community-junction.herokuapp.com/",
+            "ghurl":"https://github.com/matt-gefen/junction"
+        },
+        {
+            "title":"Poemverse",
+            "text":"Full Stack Poetry Anthology Builder built in Django",
+            "liveurl":"https://poemverse.herokuapp.com/",
+            "ghurl":"https://github.com/matt-gefen/poemverse"
+        },
+        {
+            "title":"Birb Watcher",
+            "text":"Full Stack Bird Watching Log built in Node + Express",
+            "liveurl":"https://birb-watcher.herokuapp.com/",
+            "ghurl":"https://github.com/matt-gefen/birb-watcher"
+        },
+        {
+
+            "title":"Magic Tourney",
+            "text":"Front End Turn-Based Battle Game built in Javascript",
+            "liveurl":"https://magic-tourney.netlify.app/",
+            "ghurl":"https://github.com/matt-gefen/magic_tourney"
+        }
+    ]
+}

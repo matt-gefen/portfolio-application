@@ -3,8 +3,6 @@ import React from 'react'
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 
-import styles from "./Contact.module.css";
-
 import avatar from '../../assets/images/avatar.svg'
 // import headshot from '../../assets/images/i-peaks.jpeg'
 import linkedin from '../../assets/icons/linkedin-brands.svg'
@@ -43,23 +41,23 @@ const Contact = (props) => {
   }
 
   return (
-    <div className={styles.contact}>
+    <div className='contact'>
       <div 
-        className={styles.headshotContainer}>
-          <img className={styles.headshot} src={avatar} alt="avatar" />
+        className='headshot-container-contact'>
+          <img className='headshot-contact' src={avatar} alt="avatar" />
       </div>
       <p>
         Feel free to reach out! I'd love to hear from you!
       </p>
       <form name="contact" method="POST" data-netlify="true" onSubmit={handleSubmit}>
-        <div className={styles.form}>
-        <div className={styles.leftform}>
+        <div className='form'>
+        <div className='leftform'>
           <label>Name:</label>   
           <label>Email: </label>
           <label>Message: </label>
         </div>
 
-        <div className={styles.rightform}>
+        <div className='rightform'>
           <input type="text" name="name" onChange={(e) => setName(e.target.value)}/>
           <input type="email" name="email" onChange={(e) => setEmail(e.target.value)}/>
           <textarea name="message" onChange={(e) => setMessage(e.target.value)}></textarea>
@@ -70,7 +68,7 @@ const Contact = (props) => {
             whileTap={{ scale: 0.9 }}
             style={{padding: "4px"}}
             type="submit"
-            className={styles.submit}>
+            className='submit'>
               Submit
           </motion.button>
       </form>
@@ -82,7 +80,7 @@ const Contact = (props) => {
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
             style={{backgroundColor: "transparent", border: "none"}}>
-              <img className={styles.icon} src={linkedin} alt='linkedin-logo' />
+              <img className='icon' src={linkedin} alt='linkedin-logo' />
           </motion.button>
         </a>
         <a href='https://github.com/matt-gefen'
@@ -93,7 +91,7 @@ const Contact = (props) => {
             whileTap={{ scale: 0.9 }}
             style={{backgroundColor: "transparent", border: "none"}}
           >
-            <img className={styles.icon} src={github} alt='github-logo'/>
+            <img className='icon' src={github} alt='github-logo'/>
           </motion.button>
         </a>
         <a class='link' href='mailto: matt.gefen@gmail.com'
@@ -103,7 +101,7 @@ const Contact = (props) => {
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
           style={{backgroundColor: "transparent", border: "none"}}>
-            <img className={styles.icon} src={emaillogo} alt='email-logo'/>
+            <img className='icon' src={emaillogo} alt='email-logo'/>
         </motion.button>
         </a>
       </div>
