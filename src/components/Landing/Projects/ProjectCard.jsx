@@ -8,7 +8,7 @@ const ProjectCard = ({title, text, liveurl, ghurl}) => {
     return (
     <div className="project-card">
         <div className='project-card-header'>
-            <div className='project-title'>{title}</div>
+            <div className='project-title'><a className='par-link' target="_blank" rel='noreferrer' href={liveurl}>{title}</a></div>
         </div>
         <div className='project-card-body'>
             <div className='project-card-text'>{text}</div>
