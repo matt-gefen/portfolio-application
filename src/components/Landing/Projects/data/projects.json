@@ -3,7 +3,7 @@
         {
             "title":"Junction",
             "text":"Full Stack Community Builder built in the MERN Stack",
-            "liveurl":"https://community-junction.herokuapp.com/",
+            "liveurl":"https://community-junction.fly.dev/",
             "ghurl":"https://github.com/matt-gefen/junction"
         },
         {
@@ -15,7 +15,7 @@
         {
             "title":"Birb Watcher",
             "text":"Full Stack Bird Watching Log built in Node + Express",
-            "liveurl":"https://birb-watcher.herokuapp.com/",
+            "liveurl":"https://birb-watcher.fly.dev/",
             "ghurl":"https://github.com/matt-gefen/birb-watcher"
         },
         {
