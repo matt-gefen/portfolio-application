@@ -63,7 +63,7 @@ const Experience = (props) => {
                     <div className='experience-bullets'>
                         {selectedInfo.bullets &&
                             selectedInfo.bullets.map((element) => {
-                                return <div className='experience-bullet'>{element}</div>
+                                return <div className='experience-bullet'> - {element}</div>
                             })
                         }
                     </div>

@@ -6,9 +6,10 @@
                     "time": "February 2022 - Current",
                     "link": "https://roadtripnation.com/",
                     "bullets": [
-                        "Build interactive and accessible web-courses geared towards connecting students with tangible career paths using React.js",
-                        "Collaborate with Product and UX Design teams to implement user-tested features for educational products reaching over 2000 daily users",
-                        "Craft new internal APIs and database schemas in Express and Mongoose to support modular new features"
+                        "Build interactive and accessible web courses geared towards connecting over 15,000 students annually with tangible career paths using React/Typescript.",
+                        "Craft RESTful APIs and supporting data infrastructure to provide custom resources to over 30 unique partners.",
+                        "Architect the back end and front end of a vertical video playlist feature inspired by YouTube Shorts, enabling the presentation of over 100 hours of unique video content to more than 2,000 daily users.",
+                        "Leading the refactor and migration of products to a modern codebase using Next.js 14, improving performance and maintainability with a seamless user experience."
                     ]
                 },
                 {
@@ -17,9 +18,9 @@
                     "time": "August 2020 - May 2021",
                     "link": "https://www.yearup.org/",
                     "bullets": [
-                        "Developed conformed dimensional models using dbt to enable consistent reporting of critical data",
-                        "Deployed and maintain ELT pipelines and infrastructure using Fivetran and Matillion that allowed for flexible use of raw data",
-                        "Built decision support tools in Tableau that directly inform operational and strategic actions for stakeholders throughout the organization"
+                        "Developed conformed dimensional models using dbt to enable consistent daily reporting of critical data for high-level staff.",
+                        "Deployed and maintained ELT pipelines and infrastructure using Fivetran and Matillion to enable over 500 internal clients to use organizational data flexibly",
+                        "Built decision support tools in Tableau that directly inform operational and strategic actions for over 90% of staff."
                     ]
                     
                 },
@@ -29,9 +30,9 @@
                     "link": "https://www.yearup.org/",
                     "time": "November 2018 - August 2020",
                     "bullets": [
-                        "Automated reporting of key sales metrics to internal leadership and board members with SQL and Python",
-                        "Developed standardized analytics tools in Tableau to provide users with accessible and real-time access to demand KPIs",
-                        "Trained 100+ staff members on leveraging data for decision making through guided workshops and individual sessions"
+                        "Automated reporting of key sales metrics to internal leadership and board members with SQL and Python.",
+                        "Developed standardized analytics tools in Tableau to provide users with accessible and real-time access to demand KPIs.",
+                        "Trained 100+ staff members on leveraging data for decision making through guided workshops and individual sessions."
                     ]
                 }
     ]
